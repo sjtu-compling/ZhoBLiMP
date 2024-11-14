@@ -1,0 +1,31 @@
+{
+  "user": "zhiheng",
+  "uid": "ellipsis_n_bar_adj",
+  "phenomenon": "ellipsis",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person",
+    "喜欢 讨厌",
+    "pos:VA subcat:person",
+    "的",
+    "pos:NN subcat:person",
+    "，",
+    "pos:NR subcat:person mmPos:0 mmPro:expression",
+    "pos:VA subcat:person mPos:2 mPro:subcat2 mmPos:2 mmPro:attitude",
+    "的",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "喜欢 讨厌",
+    "pos:VA subcat:person",
+    "的",
+    "pos:NN subcat:person",
+    "，",
+    "pos:NR subcat:person mmPos:0 mmPro:expression",
+    "pos:VA subcat:person mmPos:2 mmPro:subcat2",
+    "的",
+    "。"
+  ]
+}

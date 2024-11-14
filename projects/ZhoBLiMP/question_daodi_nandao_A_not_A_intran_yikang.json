@@ -1,0 +1,23 @@
+{
+  "user": "yikang",
+  "uid": "question_daodi_nandao_A_not_A_intran",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "到底",
+    "pos:VV transitivity:intran animate:1",
+    "不",
+    "matchedPosition:2 matchedProperties:expression",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "难道",
+    "pos:VV transitivity:intran animate:1",
+    "不",
+    "matchedPosition:2 matchedProperties:expression",
+    "？"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "good_rule": [
+    "phrase:Person",
+    "到底",
+    "pos:VV transitivity:tran matchedPosition:5 matchedProperties:tran_verb",
+    "不",
+    "matchedPosition:2 matchedProperties:expression",
+    "pos:NN",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "难道",
+    "pos:VV transitivity:tran matchedPosition:5 matchedProperties:tran_verb",
+    "不",
+    "matchedPosition:2 matchedProperties:expression",
+    "pos:NN",
+    "？"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "question",
+  "uid": "question_daodi_nandao_A_not_A_tran",
+  "user": "yikang"
+}

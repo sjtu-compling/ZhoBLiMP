@@ -1,0 +1,21 @@
+{
+  "user": "yikang",
+  "uid": "question_daodi_nandao_1",
+  "phenomenon": "question",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "难道",
+    "不",
+    "phrase:SimpVP",
+    "吗？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "到底",
+    "不",
+    "phrase:SimpVP",
+    "吗？"
+  ]
+}

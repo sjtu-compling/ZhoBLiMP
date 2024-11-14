@@ -1,0 +1,27 @@
+{
+  "user": "yeting",
+  "uid": "question_V_not_VP_1",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:NT subcat:future | pos:NT subcat:now",
+    "从",
+    "不",
+    "从",
+    "pos:NN subcat:location",
+    "pos:VV subcat2:leave",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:NT subcat:future | pos:NT subcat:now",
+    "从",
+    "pos:NN subcat:location",
+    "pos:VV subcat2:leave",
+    "不",
+    "从",
+    "？"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "good_rule": [
+    "phrase:ComplexPerson",
+    "phrase:PPLOC",
+    "有",
+    "没有",
+    "pos:VV transitivity:tran matchedPosition:6 matchedProperties:tran_verb",
+    "任何",
+    "pos:NN",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:ComplexPerson",
+    "phrase:PPLOC",
+    "",
+    "",
+    "pos:VV transitivity:tran matchedPosition:6 matchedProperties:tran_verb",
+    "了任何",
+    "pos:NN",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": false,
+  "phenomenon": "npi_licensing",
+  "uid": "npi_renhe_A_not_A_question",
+  "user": "huhai-final"
+}

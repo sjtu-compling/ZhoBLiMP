@@ -1,0 +1,29 @@
+{
+  "user": "yeting",
+  "uid": "renhe_no_episodic_sentences",
+  "phenomenon": "npi_licensing",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NT subcat:past",
+    "phrase:Person",
+    "没",
+    "看见 发现",
+    "任何人",
+    "在",
+    "pos:VV mPos:7 mPro:tran_verb",
+    "pos:NN",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NT subcat:past",
+    "phrase:Person",
+    "看见 发现",
+    "了",
+    "任何人",
+    "在",
+    "pos:VV mPos:7 mPro:tran_verb",
+    "pos:NN",
+    "。"
+  ]
+}

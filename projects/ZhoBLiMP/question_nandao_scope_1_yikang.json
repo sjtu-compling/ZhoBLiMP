@@ -1,0 +1,25 @@
+{
+  "user": "yikang",
+  "uid": "question_nandao_scope_1",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "难道",
+    "pos:NR subcat:person mmPos:3 mmPro:expression",
+    "pos:VV subcat:cp",
+    "pos:NR subcat:person",
+    "会 | 可能",
+    "phrase:SimpVP 0:<animate:1>",
+    "吗？"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person mmPos:3 mmPro:expression",
+    "pos:VV subcat:cp",
+    "pos:NR subcat:person",
+    "难道",
+    "会 | 可能",
+    "phrase:SimpVP 0:<animate:1>",
+    "吗？"
+  ]
+}

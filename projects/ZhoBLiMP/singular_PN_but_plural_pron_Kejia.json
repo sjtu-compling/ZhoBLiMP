@@ -1,0 +1,25 @@
+{
+  "user": "Kejia",
+  "uid": "singular_PN_but_plural_pron",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "phrase:ReflV",
+    "pos:NR subcat:person",
+    "pos:PN mPos:2 mPro:gender number:singular",
+    "们",
+    "pos:CD number:plural subcat:num | 几",
+    "个。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "phrase:ReflV",
+    "pos:NR subcat:person",
+    "pos:PN mPos:2 mPro:gender number:singular",
+    "",
+    "pos:CD number:plural subcat:num | 几",
+    "个。"
+  ]
+}

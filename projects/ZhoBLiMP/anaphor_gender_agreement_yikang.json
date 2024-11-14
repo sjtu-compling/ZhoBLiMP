@@ -1,0 +1,21 @@
+{
+  "user": "yikang",
+  "uid": "anaphor_gender_agreement",
+  "phenomenon": "anaphora",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person matchedPosition:2 matchedProperties:gender",
+    "phrase:ReflV",
+    "pos:PN animate:1 number:singular",
+    "自己",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person mismatchedPosition:2 mismatchedProperties:gender",
+    "phrase:ReflV",
+    "pos:PN animate:1 number:singular",
+    "自己",
+    "。"
+  ]
+}

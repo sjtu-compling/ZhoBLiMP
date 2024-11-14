@@ -1,0 +1,31 @@
+{
+  "user": "yeting",
+  "uid": "right_yijing_a",
+  "phenomenon": "verb_phrase",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "pos:VV transitivity:ditran subcat2:action attitude:pos",
+    "给",
+    "phrase:Person",
+    "pos:NN subcat:animal | pos:NN subcat3:movable animate:0",
+    "已经",
+    "pos:CD number:plural",
+    "次",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "pos:VV transitivity:ditran subcat2:action attitude:pos",
+    "过",
+    "phrase:Person",
+    "已经",
+    "pos:CD number:plural",
+    "次",
+    "pos:NN subcat:animal | pos:NN subcat3:movable animate:0",
+    "",
+    "。"
+  ]
+}

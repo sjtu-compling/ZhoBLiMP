@@ -1,0 +1,27 @@
+{
+  "user": "Kejia",
+  "uid": "PN_numP_a",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:PN subcat:person number:singular",
+    "们",
+    "那 | 这",
+    "pos:CD number:plural subcat:num",
+    "个",
+    "人",
+    "phrase:transVP",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NN subcat:person",
+    "们",
+    "那 | 这",
+    "pos:CD number:plural subcat:num",
+    "个",
+    "人",
+    "phrase:transVP",
+    "。"
+  ]
+}

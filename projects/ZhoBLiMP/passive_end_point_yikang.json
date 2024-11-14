@@ -1,0 +1,23 @@
+{
+  "user": "yikang",
+  "uid": "passive_end_point",
+  "phenomenon": "passive",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:NN",
+    "被",
+    "phrase:ComplexPerson",
+    "pos:VV subcat2:action matchedPosition:0 matchedProperties:tran_verb",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NN",
+    "被",
+    "phrase:ComplexPerson",
+    "pos:VV subcat2:action matchedPosition:0 matchedProperties:tran_verb",
+    "着",
+    "。"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "user": "huhai",
+  "uid": "npi_renhe_conditional",
+  "phenomenon": "npi_licensing",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "如果有任何人",
+    "phrase:SimpVP 0:<animate:1>",
+    "，",
+    "你就",
+    "告诉 通知",
+    "我 他 她",
+    "。"
+  ],
+  "bad_rule": [
+    "如果有人",
+    "phrase:SimpVP 0:<animate:1>",
+    "，",
+    "你就",
+    "告诉 通知",
+    "任何人",
+    "。"
+  ]
+}

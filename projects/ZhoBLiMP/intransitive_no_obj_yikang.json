@@ -1,0 +1,19 @@
+{
+  "user": "yikang",
+  "uid": "intransitive_no_obj",
+  "phenomenon": "argument_structure",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:ComplexPerson | phrase:Person",
+    "transitivity:intran animate:1",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:ComplexPerson | phrase:Person",
+    "transitivity:tran",
+    "了",
+    "。"
+  ]
+}

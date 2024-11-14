@@ -1,0 +1,21 @@
+{
+  "user": "yikang",
+  "uid": "npi_renhe_neg_scope_subj",
+  "phenomenon": "npi_licensing",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "没有",
+    "任何",
+    "pos:NN subcat:person | 人",
+    "phrase:SimpleVP",
+    "。"
+  ],
+  "bad_rule": [
+    "任何",
+    "pos:NN subcat:person | 人",
+    "没有",
+    "phrase:SimpleVP",
+    "。"
+  ]
+}

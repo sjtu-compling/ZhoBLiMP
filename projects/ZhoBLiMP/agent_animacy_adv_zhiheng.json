@@ -1,0 +1,25 @@
+{
+  "user": "zhiheng",
+  "uid": "agent_animacy_adv",
+  "phenomenon": "argument_structure",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:CD",
+    "pos:M matchedPosition:2 matchedProperties:classifier",
+    "pos:NN mPos:4 mPro:verb",
+    "有点 可能",
+    "pos:VV transitivity:intran animate:0 ",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:CD",
+    "pos:M matchedPosition:2 matchedProperties:classifier",
+    "pos:NN mPos:4 mPro:verb",
+    "pos:AD animate:1",
+    "pos:VV transitivity:intran animate:0 ",
+    "了",
+    "。"
+  ]
+}

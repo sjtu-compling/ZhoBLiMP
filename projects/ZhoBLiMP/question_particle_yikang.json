@@ -1,0 +1,19 @@
+{
+  "user": "yikang",
+  "uid": "question_particle",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "phrase:SimpVP 0:<animate:1>",
+    "吗",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "phrase:SimpVP 0:<animate:1>",
+    "呢",
+    "？"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "user": "yeting",
+  "uid": "question_V_not_VP_2",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "把",
+    "不",
+    "把",
+    "那",
+    "pos:M matchedPosition:6 matchedProperties:classifier",
+    "pos:NN subcat:obj",
+    "pos:VV transitivity:ditran subcat2:action attitude:pos",
+    "给",
+    "phrase:ComplexPerson",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "把",
+    "那",
+    "pos:M matchedPosition:6 matchedProperties:classifier",
+    "pos:NN subcat:obj",
+    "pos:VV transitivity:ditran subcat2:action attitude:pos",
+    "给",
+    "phrase:ComplexPerson",
+    "不",
+    "把",
+    "？"
+  ]
+}

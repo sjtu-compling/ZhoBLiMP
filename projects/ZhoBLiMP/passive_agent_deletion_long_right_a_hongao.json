@@ -1,0 +1,31 @@
+{
+  "good_rule": [
+    "那 | 那些",
+    "pos:NN subcat:beverage | pos:NN subcat:food | pos:NN subcat:obj",
+    "被我叫",
+    "pos:NR subcat:person",
+    "请",
+    "pos:NR subcat:person",
+    "托",
+    "pos:NR subcat:person",
+    "pos:VV subcat:object",
+    "了。"
+  ],
+  "bad_rule": [
+    "那 | 那些",
+    "pos:NN subcat:beverage | pos:NN subcat:food | pos:NN subcat:obj",
+    "被叫",
+    "pos:NR subcat:person",
+    "请",
+    "pos:NR subcat:person",
+    "托",
+    "pos:NR subcat:person",
+    "pos:VV subcat:object",
+    "了。"
+  ],
+  "sep": "",
+  "strict_MP": false,
+  "phenomenon": "passive",
+  "uid": "passive_agent_deletion_long_right_a",
+  "user": "hongao"
+}

@@ -1,0 +1,31 @@
+{
+  "user": "zhiheng",
+  "uid": "ellipsis_adj",
+  "phenomenon": "",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "pos:VV transitivity:tran",
+    "了",
+    "pos:NN mPos:1 mPro:tran_verb",
+    "，",
+    "phrase:Person",
+    "也",
+    "mPos:1 mPro:expression",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "pos:VV transitivity:intran animate:1",
+    "了",
+    "一小时 一会儿 一分钟 一天 很久",
+    "，",
+    "phrase:Person",
+    "也",
+    "mPos:1 mPro:expression",
+    "了",
+    "。"
+  ]
+}

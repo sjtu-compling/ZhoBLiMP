@@ -1,0 +1,25 @@
+{
+  "user": "hongao",
+  "uid": "modal_raising_yinggai",
+  "phenomenon": "control_raising",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "应该",
+    "phrase:Person",
+    "pos:VV mPos:5 mPro:tran_verb",
+    "这 那",
+    "pos:M mPos:5 mPro:classifier",
+    "pos:NN animate:0",
+    "。"
+  ],
+  "bad_rule": [
+    "应该",
+    "pos:VV mPos:5 mPro:tran_verb",
+    "phrase:Person",
+    "这 那",
+    "pos:M mPos:5 mPro:classifier",
+    "pos:NN animate:0",
+    "。"
+  ]
+}

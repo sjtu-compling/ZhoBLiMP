@@ -1,0 +1,21 @@
+{
+  "user": "hongao",
+  "uid": "passive_adverbial",
+  "phenomenon": "passive",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person",
+    "被",
+    "pos:AD subcat:de",
+    "pos:VV subcat:person subcat2:action",
+    "了。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "被在",
+    "pos:NR subcat:organization",
+    "pos:VV subcat:person subcat2:action",
+    "了。"
+  ]
+}

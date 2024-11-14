@@ -1,0 +1,25 @@
+{
+  "user": "zhiheng",
+  "uid": "existential_there_subject_raising",
+  "phenomenon": "quantifiers",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "有",
+    "pos:CD subcat:num",
+    "pos:M mPos:3 mPro:classifier",
+    "pos:NN subcat:person",
+    "pos:VV transitivity:intran animate:1",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "有",
+    "pos:DT",
+    "pos:M mPos:3 mPro:classifier",
+    "pos:NN subcat:person",
+    "pos:VV transitivity:intran animate:1",
+    "了",
+    "。"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "user": "hongao",
+  "uid": "left_dou",
+  "phenomenon": "verb_phrase",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:PN subcat:person number:plural",
+    "都",
+    "pos:AD subcat:state",
+    "地",
+    "pos:VV matchedPosition:2 matchedProperties:verb",
+    "着",
+    "pos:NN matchedPosition:4 matchedProperties:tran_verb",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat:person number:plural",
+    "pos:AD subcat:state",
+    "地",
+    "都",
+    "pos:VV matchedPosition:2 matchedProperties:verb",
+    "着",
+    "pos:NN matchedPosition:4 matchedProperties:tran_verb",
+    "。"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "user": "hongao",
+  "uid": "you_quantifier_adj",
+  "phenomenon": "quantifiers",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "pos:AD subcat:degree subcat2:no_compare",
+    "pos:VA subcat:emotion mPos:7 mPro:attitude",
+    "，",
+    "有了",
+    "一 这 那",
+    "pos:M mPos:9 mPro:classifier",
+    "pos:VA mPos:9 mPro:subcat",
+    "的",
+    "pos:NN",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "pos:AD subcat:degree subcat2:no_compare",
+    "pos:VA subcat:emotion mPos:7 mPro:attitude",
+    "，",
+    "有了",
+    "pos:VA mPos:9 mPro:subcat",
+    "一 这 那",
+    "pos:M mPos:9 mPro:classifier",
+    "的",
+    "pos:NN",
+    "。"
+  ]
+}

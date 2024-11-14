@@ -1,0 +1,23 @@
+{
+  "good_rule": [
+    "pos:NR subcat:person",
+    "pos:NT subcat:past",
+    "被",
+    "pos:NR subcat:person",
+    "pos:VV subcat:person subcat2:action",
+    "了。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "被",
+    "pos:NT subcat:past",
+    "pos:NR subcat:person",
+    "pos:VV subcat:person subcat2:action",
+    "了。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "verb_phrase",
+  "uid": "verb_phrase_left_adverbial",
+  "user": "hongao"
+}

@@ -1,0 +1,23 @@
+{
+  "user": "yeting",
+  "uid": "left_adverbial_d",
+  "phenomenon": "verb_phrase",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:AD matchedPosition:2 matchedProperties:verb",
+    "pos:VV transitivity:tran animate:1",
+    "过",
+    "pos:NN matchedPosition:2 matchedProperties:tran_verb",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:VV transitivity:tran animate:1",
+    "过",
+    "pos:AD matchedPosition:2 matchedProperties:verb",
+    "pos:NN matchedPosition:2 matchedProperties:tran_verb",
+    "。"
+  ]
+}

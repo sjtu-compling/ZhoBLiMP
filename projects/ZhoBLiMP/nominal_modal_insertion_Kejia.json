@@ -1,0 +1,25 @@
+{
+  "user": "Kejia",
+  "uid": "nominal_modal_insertion",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:PN animate:1 matchedPosition:3 matchedProperties:gender",
+    "pos:CD subcat:num matchedPosition:0 matchedProperties:number",
+    "pos:M matchedPosition:3 matchedProperties:classifier",
+    "pos:NN subcat:person animate:1",
+    "pos:VV subcat:modal",
+    "pos:VV transitivity:intran animate:1",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN animate:1 matchedPosition:3 matchedProperties:gender",
+    "pos:VV subcat:modal",
+    "pos:CD subcat:num matchedPosition:0 matchedProperties:number",
+    "pos:M matchedPosition:3 matchedProperties:classifier",
+    "pos:NN subcat:person animate:1",
+    "pos:VV transitivity:intran animate:1",
+    "。"
+  ]
+}

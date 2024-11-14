@@ -1,0 +1,29 @@
+{
+  "good_rule": [
+    "pos:PN subcat:person",
+    "把",
+    "pos:NR subcat:person",
+    "",
+    "pos:VV subcat:person subcat2:action",
+    "得",
+    "pos:AD subcat:degree",
+    "pos:VA subcat:emotion matchedPosition:4 matchedProperties:attitude",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat:person",
+    "把",
+    "pos:NR subcat:person",
+    "所",
+    "pos:VV subcat:person subcat2:action",
+    "得",
+    "pos:AD subcat:degree",
+    "pos:VA subcat:emotion matchedPosition:4 matchedProperties:attitude",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": false,
+  "phenomenon": "BA",
+  "uid": "BA_suo_adverbial_a",
+  "user": "hongao"
+}

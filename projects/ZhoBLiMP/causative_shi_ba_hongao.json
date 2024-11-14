@@ -1,0 +1,23 @@
+{
+  "user": "hongao",
+  "uid": "causative_shi_ba",
+  "phenomenon": "BA",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person",
+    "使 让",
+    "pos:PN subcat:person mismatchedPosition:0 mismatchedProperties:expression | pos:NR subcat:person",
+    "pos:AD subcat:degree subcat2:no_compare",
+    "pos:VA subcat:emotion",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "把",
+    "pos:PN subcat:person mismatchedPosition:0 mismatchedProperties:expression | pos:NR subcat:person",
+    "pos:AD subcat:degree subcat2:no_compare",
+    "pos:VA subcat:emotion",
+    "。"
+  ]
+}

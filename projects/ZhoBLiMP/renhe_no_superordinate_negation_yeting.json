@@ -1,0 +1,33 @@
+{
+  "user": "yeting",
+  "uid": "renhe_no_superordinate_negation",
+  "phenomenon": "",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "没有",
+    "pos:VV transitivity:ditran attitude:pos",
+    "给",
+    "过",
+    "pos:NR subcat:person",
+    "任何",
+    "你",
+    "的",
+    "pos:NN subcat:food | pos:NN subcat:obj",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "没有",
+    "pos:VV transitivity:ditran attitude:pos",
+    "给",
+    "过",
+    "pos:NR subcat:person",
+    "你",
+    "有",
+    "任何",
+    "pos:NN subcat:food | pos:NN subcat:obj",
+    "。"
+  ]
+}

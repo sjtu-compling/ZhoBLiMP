@@ -1,0 +1,39 @@
+{
+  "user": "yeting",
+  "uid": "ellipsis_double_object",
+  "phenomenon": "ellipsis",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "pos:VV transitivity:ditran attitude:pos",
+    "给了",
+    "pos:NR subcat:person",
+    "pos:CD",
+    "pos:M mPos:6 mPro:classifier",
+    "pos:NN subcat:obj",
+    "，",
+    "phrase:ComplexPerson",
+    "也",
+    "是",
+    "",
+    "",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "pos:VV transitivity:ditran attitude:pos",
+    "给了",
+    "pos:NR subcat:person",
+    "pos:CD",
+    "pos:M mPos:6 mPro:classifier",
+    "pos:NN subcat:obj",
+    "，",
+    "phrase:ComplexPerson",
+    "也",
+    "pos:VV transitivity:ditran attitude:pos",
+    "给了",
+    "pos:NR subcat:person",
+    "。"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "good_rule": [
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:tran",
+    "了",
+    "任何",
+    "pos:NN matchedPosition:1 matchedProperties:tran_verb",
+    "吗",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:tran",
+    "过",
+    "了",
+    "任何",
+    "pos:NN matchedPosition:1 matchedProperties:tran_verb",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "npi_licensing",
+  "uid": "npi_renhe_ma_question",
+  "user": "huhai"
+}

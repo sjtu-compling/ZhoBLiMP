@@ -1,0 +1,27 @@
+{
+  "user": "yeting",
+  "uid": "fci_renhe_ruguo",
+  "phenomenon": "fci_licensing",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "如果",
+    "有",
+    "任何人",
+    "",
+    "phrase:SimpVP",
+    "，",
+    "马上告诉我",
+    "。"
+  ],
+  "bad_rule": [
+    "如果",
+    "有",
+    "任何人",
+    "都",
+    "phrase:SimpVP",
+    "，",
+    "马上告诉我",
+    "。"
+  ]
+}

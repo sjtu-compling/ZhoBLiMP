@@ -1,0 +1,25 @@
+{
+  "user": "zhiheng",
+  "uid": "classifier_noun_agreement",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "这边 那边",
+    "站 坐 躺",
+    "着",
+    "pos:CD",
+    "pos:M subcat:person",
+    "pos:NN subcat:person",
+    "。"
+  ],
+  "bad_rule": [
+    "这边 那边",
+    "站 坐 躺",
+    "着",
+    "pos:CD",
+    "pos:M subcat:food | pos:M subcat:beverage | pos:M subcat:animal",
+    "pos:NN subcat:person",
+    "。"
+  ]
+}

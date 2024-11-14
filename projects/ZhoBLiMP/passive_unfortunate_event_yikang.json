@@ -1,0 +1,25 @@
+{
+  "user": "yikang",
+  "uid": "passive_unfortunate_event",
+  "phenomenon": "passive",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Det",
+    "pos:M matchedPosition:2 matchedProperties:classifier",
+    "pos:NN",
+    "遭人 | 遭到 | 叫人",
+    "pos:VV attitude:neg matchedPosition:2 matchedProperties:subcat",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Det",
+    "pos:M matchedPosition:2 matchedProperties:classifier",
+    "pos:NN",
+    "遭人 | 遭到 | 叫人",
+    "pos:VV attitude:pos matchedPosition:2 matchedProperties:subcat",
+    "了",
+    "。"
+  ]
+}

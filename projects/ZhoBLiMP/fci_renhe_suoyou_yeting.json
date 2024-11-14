@@ -1,0 +1,21 @@
+{
+  "user": "yeting",
+  "uid": "fci_renhe_suoyou",
+  "phenomenon": "fci_licensing",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "所有",
+    "人",
+    "都",
+    "phrase:transVP",
+    "。"
+  ],
+  "bad_rule": [
+    "任何",
+    "人",
+    "都",
+    "phrase:transVP",
+    "。"
+  ]
+}

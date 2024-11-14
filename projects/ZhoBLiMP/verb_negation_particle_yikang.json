@@ -1,0 +1,23 @@
+{
+  "user": "yikang",
+  "uid": "verb_negation_particle",
+  "phenomenon": "verb_phrase",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "没有",
+    "pos:VV transitivity:tran matchedPosition:4 matchedProperties:tran_verb",
+    "过",
+    "pos:NN",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "没有",
+    "pos:VV transitivity:tran matchedPosition:4 matchedProperties:tran_verb",
+    "了",
+    "pos:NN",
+    "。"
+  ]
+}

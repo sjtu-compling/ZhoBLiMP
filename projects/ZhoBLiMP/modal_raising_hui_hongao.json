@@ -1,0 +1,25 @@
+{
+  "user": "hongao",
+  "uid": "modal_raising_hui",
+  "phenomenon": "control_raising",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "这 那",
+    "pos:M mPos:2 mPro:classifier",
+    "pos:NN subcat:vehicle | pos:NN subcat:general | pos:NN subcat:message | pos:NN subcat:food | pos:NN subcat:beverage | pos:NN subcat:book",
+    "马上 可能 就 | ",
+    "会 要",
+    "pos:VV mPos:2 mPro:verb",
+    "。"
+  ],
+  "bad_rule": [
+    "马上 可能 就 | ",
+    "会 要",
+    "这 那",
+    "pos:M mPos:2 mPro:classifier",
+    "pos:NN subcat:vehicle | pos:NN subcat:general | pos:NN subcat:message | pos:NN subcat:food | pos:NN subcat:beverage | pos:NN subcat:book",
+    "pos:VV mPos:2 mPro:verb",
+    "。"
+  ]
+}

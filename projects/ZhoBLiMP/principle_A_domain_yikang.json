@@ -1,0 +1,25 @@
+{
+  "user": "yikang",
+  "uid": "principle_A_domain",
+  "phenomenon": "anaphora",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person number:singular | pos:PN subcat:person number:singular",
+    "pos:VV subcat:control | pos:VV subcat:cp",
+    "pos:NR subcat:person mismatchedPosition:0 mismatchedProperties:gender",
+    "phrase:ReflV",
+    "pos:PN number:singular matchedPosition:2 matchedProperties:gender",
+    "自己",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person number:singular | pos:PN subcat:person number:singular",
+    "pos:VV subcat:control | pos:VV subcat:cp",
+    "pos:NR subcat:person mismatchedPosition:0 mismatchedProperties:gender",
+    "phrase:ReflV",
+    "pos:PN number:singular mismatchedPosition:2 mismatchedProperties:gender",
+    "自己",
+    "。"
+  ]
+}

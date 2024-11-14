@@ -1,0 +1,31 @@
+{
+  "user": "siyuan",
+  "uid": "relativization_movement_no_gap",
+  "phenomenon": "relativization_topicalization",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person|phrase:ComplexPerson",
+    "所",
+    "pos:VV subcat:person transitivity:tran",
+    "",
+    "的",
+    "那",
+    "pos:M matchedPosition:7 matchedProperties:classifier",
+    "pos:NN subcat:person",
+    "来了",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person|phrase:ComplexPerson",
+    "所",
+    "pos:VV subcat:person transitivity:tran",
+    "pos:PN subcat:person subcat2:person3 number:singular matchedPosition:7 matchedProperties:gender",
+    "的",
+    "那",
+    "pos:M matchedPosition:7 matchedProperties:classifier",
+    "pos:NN subcat:person",
+    "来了",
+    "。"
+  ]
+}

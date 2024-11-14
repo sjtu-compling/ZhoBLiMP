@@ -1,0 +1,25 @@
+{
+  "user": "hongao",
+  "uid": "BA_deletion",
+  "phenomenon": "BA",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "把",
+    "pos:NN subcat:vehicle | pos:NN subcat:container",
+    "pos:VV subcat2:action_put",
+    "满了",
+    "pos:NN subcat:obj",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "pos:VV subcat2:action_put",
+    "满了",
+    "pos:NN subcat:vehicle | pos:NN subcat:container",
+    "",
+    "pos:NN subcat:obj",
+    "。"
+  ]
+}

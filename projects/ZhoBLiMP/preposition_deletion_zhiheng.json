@@ -1,0 +1,31 @@
+{
+  "user": "zhiheng",
+  "uid": "preposition_deletion",
+  "phenomenon": "verb_phrase",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "在",
+    "pos:NN subcat:location",
+    "pos:LC mPos:2 mPro:prep",
+    "pos:VV transitivity:tran",
+    "过",
+    "pos:CD",
+    "pos:M matchedPosition:8 matchedProperties:classifier",
+    "pos:NN mPos:4 mPro:tran_verb",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "",
+    "pos:NN subcat:location",
+    "pos:LC mPos:2 mPro:prep",
+    "pos:VV transitivity:tran",
+    "过",
+    "pos:CD",
+    "pos:M matchedPosition:8 matchedProperties:classifier",
+    "pos:NN mPos:4 mPro:tran_verb",
+    "。"
+  ]
+}

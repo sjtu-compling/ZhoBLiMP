@@ -1,0 +1,23 @@
+{
+  "user": "yikang",
+  "uid": "passive_no_adj",
+  "phenomenon": "passive",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:ComplexPerson",
+    "pos:LB matchedPosition:3 matchedProperties:attitude",
+    "phrase:Person",
+    "pos:VV subcat:person subcat2:action",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:ComplexPerson",
+    "pos:LB matchedPosition:3 matchedProperties:attitude",
+    "phrase:Person",
+    "pos:VA",
+    "了",
+    "。"
+  ]
+}

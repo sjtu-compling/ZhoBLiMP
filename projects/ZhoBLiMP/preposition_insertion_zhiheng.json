@@ -1,0 +1,29 @@
+{
+  "user": "zhiheng",
+  "uid": "preposition_insertion",
+  "phenomenon": "verb_phrase",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "给",
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:tran",
+    "了",
+    "pos:CD",
+    "pos:M matchedPosition:7 matchedProperties:classifier",
+    "pos:NN mPos:3 mPro:tran_verb",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "pos:VV transitivity:tran",
+    "给",
+    "phrase:ComplexPerson",
+    "",
+    "pos:CD",
+    "pos:M matchedPosition:7 matchedProperties:classifier",
+    "pos:NN mPos:3 mPro:tran_verb",
+    "。"
+  ]
+}

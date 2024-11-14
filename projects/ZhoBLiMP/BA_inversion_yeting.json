@@ -1,0 +1,27 @@
+{
+  "user": "yeting",
+  "uid": "BA_inversion",
+  "phenomenon": "BA",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "把",
+    "phrase:ComplexNP -1:<animate:1>",
+    "pos:VV subcat2:action_put",
+    "在",
+    "pos:NN subcat:location",
+    "里",
+    "。"
+  ],
+  "bad_rule": [
+    "把",
+    "phrase:ComplexNP -1:<animate:1>",
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:VV subcat2:action_put",
+    "在",
+    "pos:NN subcat:location",
+    "里",
+    "。"
+  ]
+}

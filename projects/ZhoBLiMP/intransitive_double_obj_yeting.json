@@ -1,0 +1,29 @@
+{
+  "user": "yeting",
+  "uid": "intransitive_double_obj",
+  "phenomenon": "argument_structure",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:ditran attitude:pos",
+    "给",
+    "了",
+    "phrase:Person",
+    "pos:CD",
+    "pos:M mPro:classifier mPos:7",
+    "pos:NN animate:1",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:ditran attitude:pos",
+    "给",
+    "了",
+    "拿",
+    "pos:NN animate:1",
+    "的",
+    "phrase:Person",
+    "。"
+  ]
+}

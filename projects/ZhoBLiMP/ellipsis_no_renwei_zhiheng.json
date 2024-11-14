@@ -1,0 +1,35 @@
+{
+  "user": "zhiheng",
+  "uid": "ellipsis_no_renwei",
+  "phenomenon": "",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "expression:觉得 | expression:知道",
+    "这 那",
+    "pos:M mPos:4 mPro:classifier",
+    "pos:NN",
+    "pos:AD subcat:degree",
+    "pos:VA mPos:4 mPro:subcat",
+    "，",
+    "phrase:Person ",
+    "也",
+    "mPos:1 mPro:expression",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "认为",
+    "这 那",
+    "pos:M mPos:4 mPro:classifier",
+    "pos:NN",
+    "pos:AD subcat:degree",
+    "pos:VA mPos:4 mPro:subcat",
+    "，",
+    "phrase:Person ",
+    "也",
+    "认为",
+    "。"
+  ]
+}

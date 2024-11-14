@@ -1,0 +1,25 @@
+{
+  "user": "siyuan",
+  "uid": "topicalization_SOV",
+  "phenomenon": "relativization_topicalization",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:PN",
+    "在",
+    "pos:VV transitivity:tran",
+    "一",
+    "pos:M matchedPosition:5 matchedProperties:classifier",
+    "pos:NN matchedPosition:2 matchedProperties:tran_verb",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN",
+    "一",
+    "pos:M matchedPosition:5 matchedProperties:classifier",
+    "pos:NN matchedPosition:2 matchedProperties:tran_verb",
+    "在",
+    "pos:VV transitivity:tran",
+    "。"
+  ]
+}

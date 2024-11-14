@@ -1,0 +1,27 @@
+{
+  "user": "yikang",
+  "uid": "agent_animacy_passive",
+  "phenomenon": "argument_structure",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Det",
+    "pos:M mPos:2 mPro:classifier",
+    "pos:NN",
+    "被",
+    "phrase:Person",
+    "transitivity:tran mPos:2 mPro:subcat | pos:VV mPos:2 mPro:tran_verb",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Det",
+    "pos:M mPos:2 mPro:classifier",
+    "pos:NN",
+    "被",
+    "pos:NN animate:0",
+    "transitivity:tran mPos:2 mPro:subcat | pos:VV mPos:2 mPro:tran_verb",
+    "了",
+    "。"
+  ]
+}

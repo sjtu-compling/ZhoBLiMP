@@ -1,0 +1,29 @@
+{
+  "good_rule": [
+    " | phrase:Possessive",
+    "phrase:Det",
+    "pos:M",
+    "pos:NN matchedPosition:2 matchedProperties:classifier",
+    "被",
+    "phrase:Person",
+    "给",
+    "pos:VV matchedPosition:3 matchedProperties:tran_verb",
+    "了。"
+  ],
+  "bad_rule": [
+    "被",
+    "phrase:Person",
+    " | phrase:Possessive",
+    "phrase:Det",
+    "pos:M",
+    "pos:NN matchedPosition:2 matchedProperties:classifier",
+    "给",
+    "pos:VV matchedPosition:3 matchedProperties:tran_verb",
+    "了。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "passive",
+  "uid": "BEI_construction_a",
+  "user": "yikang"
+}

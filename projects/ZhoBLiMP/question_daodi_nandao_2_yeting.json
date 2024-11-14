@@ -1,0 +1,27 @@
+{
+  "user": "yeting",
+  "uid": "question_daodi_nandao_2",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "到底",
+    "pos:VV transitivity:tran matchedPosition:5 matchedProperties:tran_verb",
+    "了",
+    "pos:DT subcat:article",
+    "pos:NN",
+    "没",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "难道",
+    "pos:VV transitivity:tran matchedPosition:5 matchedProperties:tran_verb",
+    "了",
+    "pos:DT subcat:article",
+    "pos:NN",
+    "没",
+    "？"
+  ]
+}

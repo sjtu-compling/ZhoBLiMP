@@ -1,0 +1,21 @@
+{
+  "good_rule": [
+    "phrase:ComplexPerson",
+    "没有",
+    "phrase:PPRH",
+    "phrase:GuoVP",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:ComplexPerson",
+    "phrase:PPRH",
+    "没有",
+    "phrase:GuoVP",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "npi_licensing",
+  "uid": "npi_renhe_neg_scope_locP",
+  "user": "huhai"
+}

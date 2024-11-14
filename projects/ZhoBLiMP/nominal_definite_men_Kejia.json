@@ -1,0 +1,21 @@
+{
+  "user": "Kejia",
+  "uid": "nominal_definite_men",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "有 | 没有",
+    "pos:NN subcat:person",
+    "",
+    "phrase:InfVP 0:<animate:1>",
+    "。"
+  ],
+  "bad_rule": [
+    "有 | 没有",
+    "pos:NN subcat:person",
+    "们",
+    "phrase:InfVP 0:<animate:1>",
+    "。"
+  ]
+}

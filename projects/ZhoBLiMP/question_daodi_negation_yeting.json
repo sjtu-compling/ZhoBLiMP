@@ -1,0 +1,25 @@
+{
+  "user": "yeting",
+  "uid": "question_daodi_negation",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "到底",
+    "不",
+    "愿意 | 想 | 希望",
+    "pos:VV transitivity:tran",
+    "什么",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "不",
+    "到底",
+    "愿意 | 想 | 希望",
+    "pos:VV transitivity:tran",
+    "什么",
+    "？"
+  ]
+}

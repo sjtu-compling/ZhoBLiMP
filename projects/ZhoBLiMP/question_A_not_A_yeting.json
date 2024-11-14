@@ -1,0 +1,27 @@
+{
+  "good_rule": [
+    "phrase:Person",
+    "pos:VV matchedPosition:2 matchedProperties:tran_verb",
+    "pos:NN",
+    "",
+    "不",
+    "pos:VV matchedPosition:1 matchedProperties:expression",
+    "pos:NN matchedPosition:2 matchedProperties:expression",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "pos:VV matchedPosition:2 matchedProperties:tran_verb",
+    "pos:NN",
+    "phrase:Person",
+    "不",
+    "pos:VV matchedPosition:1 matchedProperties:expression",
+    "pos:NN matchedPosition:2 matchedProperties:expression",
+    "？"
+  ],
+  "sep": "",
+  "strict_MP": false,
+  "phenomenon": "question",
+  "uid": "question_A_not_A",
+  "user": "yeting"
+}

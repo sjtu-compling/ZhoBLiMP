@@ -1,0 +1,25 @@
+{
+  "user": "hongao",
+  "uid": "verb_phrase_left_negation",
+  "phenomenon": "verb_phrase",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "没有",
+    "把",
+    "pos:PN subcat:person mismatchedPosition:0 mismatchedProperties:expression | pos:NR subcat:person",
+    "",
+    "pos:VV subcat:person subcat2:action subcat3:once",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "把",
+    "",
+    "pos:PN subcat:person mismatchedPosition:0 mismatchedProperties:expression | pos:NR subcat:person",
+    "没有",
+    "pos:VV subcat:person subcat2:action subcat3:once",
+    "。"
+  ]
+}

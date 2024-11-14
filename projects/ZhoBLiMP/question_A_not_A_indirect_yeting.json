@@ -1,0 +1,33 @@
+{
+  "user": "yeting",
+  "uid": "question_A_not_A_indirect",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "想",
+    "讨论",
+    "phrase:Person",
+    "pos:VV transitivity:intran subcat:person",
+    "不",
+    "matchedPosition:4 matchedProperties:expression",
+    "的",
+    "问题",
+    "",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "想",
+    "讨论",
+    "phrase:Person",
+    "pos:VV transitivity:intran subcat:person",
+    "不",
+    "matchedPosition:4 matchedProperties:expression",
+    "的",
+    "问题",
+    "呢",
+    "？"
+  ]
+}

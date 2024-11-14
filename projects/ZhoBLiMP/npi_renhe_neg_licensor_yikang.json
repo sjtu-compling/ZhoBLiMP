@@ -1,0 +1,25 @@
+{
+  "user": "yikang",
+  "uid": "npi_renhe_neg_licensor",
+  "phenomenon": "npi_licensing",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:ComplexPerson",
+    "不",
+    " | 可能 | 可以 | 会",
+    "pos:VV subcat:person subcat2:stative",
+    "任何",
+    "pos:NN subcat:person | 人",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:ComplexPerson",
+    "",
+    " | 可能 | 可以 | 会",
+    "pos:VV subcat:person subcat2:stative",
+    "任何",
+    "pos:NN subcat:person | 人",
+    "。"
+  ]
+}

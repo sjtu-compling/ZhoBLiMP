@@ -1,0 +1,29 @@
+{
+  "user": "yeting",
+  "uid": "ya_insertion",
+  "phenomenon": "verb_phrase",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "说 认为 觉得 以为",
+    "呀，",
+    "pos:NN subcat:person",
+    "去",
+    "pos:VV mPos:6 mPro:tran_verb",
+    "pos:NN subcat3:movable",
+    "了",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "告诉 告知 劝",
+    "呀，",
+    "pos:NN subcat:person",
+    "去",
+    "pos:VV mPos:6 mPro:tran_verb",
+    "pos:NN subcat3:movable",
+    "了",
+    "。"
+  ]
+}

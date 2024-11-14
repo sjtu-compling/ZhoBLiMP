@@ -1,0 +1,23 @@
+{
+  "user": "siyuan",
+  "uid": "topicalization_SOV_mei",
+  "phenomenon": "relativization_topicalization",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:PN",
+    "没",
+    "pos:VV transitivity:tran",
+    "任何 什么",
+    "pos:NN matchedPosition:2 matchedProperties:tran_verb",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN",
+    "任何 什么",
+    "pos:NN matchedPosition:2 matchedProperties:tran_verb",
+    "没",
+    "pos:VV transitivity:tran",
+    "。"
+  ]
+}

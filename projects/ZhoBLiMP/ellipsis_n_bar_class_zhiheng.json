@@ -1,0 +1,33 @@
+{
+  "user": "zhiheng",
+  "uid": "ellipsis_n_bar_class",
+  "phenomenon": "ellipsis",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person",
+    "pos:VV mPos:5 mPro:tran_verb",
+    "了",
+    "pos:CD subcat:num",
+    "pos:M mPos:5 mPro:classifier",
+    "pos:NN",
+    "，",
+    "pos:NR subcat:person mmPos:0 mmPro:expression",
+    "pos:CD mmPos:3 mmPro:expression",
+    "pos:M mPos:4 mPro:expression",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "pos:VV mPos:5 mPro:tran_verb",
+    "了",
+    "pos:CD subcat:num",
+    "pos:M mPos:5 mPro:classifier",
+    "pos:NN",
+    "，",
+    "pos:NR subcat:person mmPos:0 mmPro:expression",
+    "pos:CD mmPos:3 mmPro:expression",
+    "pos:M mmPos:5 mmPro:classifier",
+    "。"
+  ]
+}

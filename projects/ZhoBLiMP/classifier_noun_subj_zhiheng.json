@@ -1,0 +1,23 @@
+{
+  "user": "zhiheng",
+  "uid": "classifier_noun_subj",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "想买 想要 想拿",
+    "pos:M mPos:3 mPro:classifier",
+    "pos:NN subcat:food | pos:NN subcat:obj | pos:NN subcat:beverage",
+    "",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:M mPos:3 mPro:classifier",
+    "pos:NN subcat:food | pos:NN subcat:obj | pos:NN subcat:beverage",
+    "是",
+    "phrase:Person",
+    "想买 想要 想拿",
+    "的。"
+  ]
+}

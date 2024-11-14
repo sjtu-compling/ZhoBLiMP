@@ -1,0 +1,33 @@
+{
+  "user": "siyuan",
+  "uid": "relative_operator_intepretation",
+  "phenomenon": "relativization_topicalization",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:VV subcat:modal",
+    "把",
+    "phrase:Person | phrase:ComplexPerson",
+    "为什么",
+    "phrase:InfVP",
+    "的",
+    "原因",
+    "告诉",
+    "phrase:Person | phrase:ComplexPerson",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:VV subcat:modal",
+    "把",
+    "phrase:Person | phrase:ComplexPerson",
+    "为什么",
+    "phrase:InfVP",
+    "的",
+    "",
+    "告诉",
+    "phrase:Person | phrase:ComplexPerson",
+    "。"
+  ]
+}

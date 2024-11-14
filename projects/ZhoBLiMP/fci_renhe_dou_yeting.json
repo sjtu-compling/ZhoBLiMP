@@ -1,0 +1,23 @@
+{
+  "user": "yeting",
+  "uid": "fci_renhe_dou",
+  "phenomenon": "fci_licensing",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "任何",
+    "人",
+    "都",
+    "可以",
+    "phrase:SimpVP",
+    "。"
+  ],
+  "bad_rule": [
+    "任何",
+    "人",
+    "",
+    "可以",
+    "phrase:SimpVP",
+    "。"
+  ]
+}

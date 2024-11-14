@@ -1,0 +1,31 @@
+{
+  "user": "zhiheng",
+  "uid": "principle_A_domain_number",
+  "phenomenon": "anaphora",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "这 那",
+    "pos:CD number:plural",
+    "pos:M mPos:3 mPro:classifier",
+    "pos:NN subcat:person",
+    "说",
+    "pos:NR subcat:person mPos:7 mPro:gender",
+    "phrase:ReflV",
+    "pos:PN subcat2:person3 number:singular",
+    "自己",
+    "。"
+  ],
+  "bad_rule": [
+    "这 那",
+    "pos:CD number:plural",
+    "pos:M mPos:3 mPro:classifier",
+    "pos:NN subcat:person",
+    "说",
+    "pos:NR subcat:person mPos:7 mPro:gender",
+    "phrase:ReflV",
+    "pos:PN subcat2:person3 number:singular",
+    "们自己",
+    "。"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "user": "hongao",
+  "uid": "BA_verb_le_b",
+  "phenomenon": "BA",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "把",
+    "pos:PN subcat:person | pos:NR subcat:person mismatchedPosition:0 mismatchedProperties:expression",
+    "pos:VV subcat:person subcat2:action subcat3:once",
+    "了。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "把",
+    "pos:PN subcat:person | pos:NR subcat:person mismatchedPosition:0 mismatchedProperties:expression",
+    "pos:VV subcat:person subcat2:action subcat3:once",
+    "。"
+  ]
+}

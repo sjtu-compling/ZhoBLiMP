@@ -1,0 +1,964 @@
+expression	pos	subcat	subcat2	subcat3	attitude	transitivity	gender	animate	classifier	number	tran_verb	verb	adjective	refl	aspect	prep	nchar
+张三	NR	person					neutral	1		singular							2
+李四	NR	person					neutral	1		singular							2
+王五	NR	person					neutral	1		singular							2
+小明	NR	person					neutral	1		singular							2
+小王	NR	person					neutral	1		singular							2
+赵大爷	NR	person					male	1		singular							3
+胡大爷	NR	person					male	1		singular							3
+冯大哥	NR	person					male	1		singular							3
+杨大哥	NR	person					male	1		singular							3
+李先生	NR	person					male	1		singular							3
+王先生	NR	person					male	1		singular							3
+刘先生	NR	person					male	1		singular							3
+张先生	NR	person					male	1		singular							3
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+王小姐	NR	person					female	1		singular							3
+徐小姐	NR	person					female	1		singular							3
+宋女士	NR	person					female	1		singular							3
+张夫人	NR	person					female	1		singular							3
+吴太太	NR	person					female	1		singular							3
+何太太	NR	person					female	1		singular							3
+周大妈	NR	person					female	1		singular							3
+郑大妈	NR	person					female	1		singular							3
+陈大姐	NR	person					female	1		singular							3
+王姨	NR	person					female	1		singular							
+张婶	NR	person					female	1		singular							
+李太太	NR	person					female	1		singular							
+王大娘	NR	person					female	1		singular							
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+外人	NR	anyone															2
+他人	NR	anyone															2
+别人	NR	anyone															2
+其他人	NR	anyone															
+外国人	NR	anyone															
+																	
+																	
+联合国	NR	organization								singular							3
+红十字	NR	organization								singular							3
+国际足联	NR	organization								singular							4
+欧盟	NR	organization								singular							2
+议会	NR	organization								singular							2
+奥委会	NR	organization								singular							3
+世界银行	NR	organization								singular							4
+非洲联盟	NR	organization								singular							4
+北约	NR	organization								singular							2
+亚投行	NR	organization								singular							3
+																	
+长江	NR	location		immovable				0			跨越/去						2
+黄河	NR	location		immovable				0			跨越/去						2
+																	
+北京	NR	city									回到/去						2
+上海	NR	city									回到/去						2
+广州	NR	city									回到/去						2
+纽约	NR	city									回到/去						2
+伦敦	NR	city									回到/去						2
+四川	NR	province									回到/去						2
+江西	NR	province									回到/去						2
+浙江	NR	province									回到/去						2
+安徽	NR	province									回到/去						2
+湖北	NR	province									回到/去						2
+河南	NR	province															
+河北	NR	province															
+江苏	NR	province															
+福建	NR	province															
+																	
+他	PN	person	person3				male	1		singular							1
+她	PN	person	person3				female	1		singular							1
+你	PN	person	person2					1		singular							1
+我	PN	person	person1					1		singular							1
+它	PN	animal	person3					0		singular							1
+他们	PN	person	person3				male	1		plural							2
+她们	PN	person	person3				female	1		plural							2
+你们	PN	person	person2					1		plural							2
+我们	PN	person	person1					1		plural							2
+过	AS																1
+了	AS																1
+着	AS																1
+辆	M								辆								1
+只	M	animal							只								1
+个	M	person							个								1
+把	M	obj							把								1
+张	M	obj							张								1
+条	M	animal							条								1
+位	M	person							位								1
+所	M								所								1
+家	M								家								1
+头	M	animal							头								1
+瓶	M	beverage							瓶								1
+桶	M	beverage							桶								1
+杯	M	beverage							杯								1
+块	M	food							块								1
+串	M	food							串								1
+片	M								片								1
+部	M	video/book							部								1
+本	M	book							本								1
+这	DT	wCD/woCD	singular														1
+那	DT	wCD/woCD	singular														1
+另外	DT	wCD															2
+这些	DT	article	plural														
+那些	DT	article	plural														
+这个	DT	article	singular														
+那个	DT	article	singular														
+																	
+一	CD	num								singular							1
+两	CD	num								plural							1
+三	CD	num								plural							1
+四	CD	num								plural							1
+五	CD	num								plural							1
+六	CD	num								plural							1
+七	CD	num								plural							1
+八	CD	num								plural							1
+九	CD	num								plural							1
+十	CD	num								plural							1
+几	CD	many								plural							1
+好几	CD	many								plural							2
+十几	CD	many								plural							2
+好几十	CD	many								plural							3
+好几百	CD	many								plural							3
+非常多	CD	many								plural							3
+许多	CD	many								plural							2
+非常	AD	degree	no_compare														2
+很	AD	degree	no_compare														1
+比较	AD	degree	no_compare														2
+也	AD																1
+有点	AD	degree	no_compare														2
+都	AD																1
+最	AD	degree	compare														1
+更	AD	degree	compare														1
+只	AD																1
+会	AD	model															1
+能	AD	model															1
+即将	AD	tense															2
+马上	AD	tense															2
+还是	AD	tense													了		2
+已经	AD	tense													了		2
+正在	AD	tense															2
+曾经	AD	tense													过		2
+仍然	AD	tense															2
+经常	AD	tense															2
+总是	AD	tense															2
+常常	AD	tense															2
+差点儿	AD	chadian															3
+险些	AD	chadian															2
+几乎	AD	chadian															2
+大声	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+小声	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+轻声	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+缓缓	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+静静	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+慢慢	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+专心	AD	state_de						1				走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+悄悄	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+努力	AD	state_de						1				走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+故意	AD	state_de						1									2
+无心	AD	state_de						1									2
+急速	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					2
+偷偷	AD	state_de										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+孤身一人	AD	state_guo										走/跨越/去/登/爬					4
+赤手空拳	AD	state_guo										杀/打/捕捉/屠宰					4
+不畏艰险	AD	state_guo										走/跨越/去/登/爬					4
+赤脚	AD	state_guo										走/跨越/去/登/爬					2
+空着手	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+红着脸	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+憋着气	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+光着膀子	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+低着头	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+举着手	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+闭着眼睛	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+鼓起勇气	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+仰着头	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+甩着胳膊	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+嘟着嘴	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+咬牙切齿	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+咬着牙	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+咧着嘴	AD	state										走/跨越/去/登/爬/唱/演奏/拉/弹/吃/喝/观看/拍摄/制作/吃/煮/炖/烧/清蒸/爆炒/捕捉/杀/洗/脱/检查/包扎/看/写/创作/读/弹/听/麻醉/搬/领养/买/卖/开/驾驶					
+																	
+恐怕会	AD	possibility															
+难免会	AD	possibility															
+容易	AD	possibility															
+很可能会	AD	possibility															
+悄悄地	AD	de/transfer															
+轻轻地	AD	de/transfer															
+小心地	AD	de/transfer															
+放心地	AD	de/transfer															
+大摇大摆地	AD	de/transfer															
+很快地	AD	de/transfer															
+大声地	AD	de/transfer															
+小声地	AD	de/transfer															
+轻声地	AD	de/transfer															
+缓缓地	AD	de/transfer															
+静静地	AD	de/transfer															
+慢慢地	AD	de/transfer															
+专心地	AD	de/transfer															
+奋力地	AD	de/transfer															
+努力地	AD	de/transfer															
+不遗余力地	AD	de/transfer															
+轻飘飘地	AD	de/transfer															
+静悄悄地	AD	de/transfer															
+慢吞吞地	AD	de/transfer															
+莫名其妙地	AD	de															
+糊里糊涂地	AD	de															
+迷迷糊糊地	AD	de															
+不明所以地	AD	de															
+开开心心	AD	nude															
+高高兴兴	AD	nude															
+喜笑颜开	AD	nude															
+喜上眉梢	AD	nude															
+乐开了花	AD	nude															
+饱	AD	enough	eat														
+够	AD	enough	eat/see/hear														
+																	
+																	
+																	
+从不	AD																2
+受到	LB				pos/neg												2
+遭到	LB				neg												2
+被	LB				pos/neg												1
+椅子	NN	obj		movable				0	把		搬		昂贵/便宜/有质感/优雅/精致/特殊/普通/大/小				2
+桌子	NN	obj		movable				0	张		搬		昂贵/便宜/有质感/优雅/精致/特殊/普通/大/小				2
+小狗	NN	animal		movable				1	条		领养						2
+小猫	NN	animal		movable				1	只		领养						2
+老虎	NN	animal		movable				1	只		麻醉/捕捉/打/杀						2
+蛇	NN	animal		movable				1	条		捕捉/杀						1
+牛	NN	animal		movable				1	头		屠宰/杀						1
+大象	NN	animal		movable				1	头		麻醉/捕捉/杀						2
+鸡	NN	animal		movable				1	只		吃/煮/炖/烧/清蒸/爆炒/捕捉/杀						1
+鸭	NN	animal		movable				1	只		吃/煮/炖/烧/清蒸/爆炒/捕捉/杀						1
+鱼	NN	animal		movable				1	条		吃/煮/炖/烧/清蒸/爆炒/捕捉/杀						1
+头	NN	body		immovable				/	个		包扎/检查/洗						1
+手	NN	body		immovable				/	只		包扎/检查/打断/洗						1
+脚	NN	body		immovable				/	只		包扎/检查/打断/洗						1
+胃	NN	body		immovable				/			检查						1
+心脏	NN	body		immovable				/	颗		检查						2
+眼睛	NN	body		immovable				/	个		检查						2
+鼻子	NN	body		immovable				/	只		检查/包扎/打断						2
+耳朵	NN	body		immovable				/	个		检查/包扎						2
+肚子	NN	body		immovable				/			检查/包扎						2
+腿	NN	body		immovable				/	条		检查/包扎/打断						1
+																	
+衣服	NN	obj		movable				0	件		洗/脱		昂贵/便宜/有质感/优雅/精致/特殊/普通/大/小				2
+裤子	NN	obj		movable				0	条		洗/脱		昂贵/便宜/有质感/优雅/精致/特殊/普通/大/小				2
+裙子	NN	obj		movable				0	条		洗/脱		昂贵/便宜/有质感/优雅/精致/特殊/普通/大/小				2
+袜子	NN	obj		movable				0	双/只		洗/脱		昂贵/便宜/有质感/优雅/精致/特殊/普通/大/小				2
+手套	NN	obj		movable				0	双/只		洗/脱		昂贵/便宜/有质感/优雅/精致/特殊/普通/大/小				2
+杯子	NN	obj		movable				0	个		打碎/清洗		昂贵/便宜/有质感/优雅/精致/特殊/普通/大/小				2
+																	
+																	
+兄弟	NN	person	relative	movable			male	1		plural							2
+姐妹	NN	person	relative	movable			female	1		plural							2
+弟弟	NN	person	relative	movable			male	1	个	singular							2
+妹妹	NN	person	relative	movable			female	1	个	singular							2
+哥哥	NN	person	relative	movable			male	1	个	singular							2
+姐姐	NN	person	relative	movable			female	1	个	singular							2
+爸爸	NN	person	relative	movable			male	1		singular							2
+妈妈	NN	person	relative	movable			female	1		singular							2
+儿子	NN	person	relative	movable			male	1	个	singular							2
+女儿	NN	person	relative	movable			female	1	个	singular							2
+父亲	NN	person	relative	movable			male	1	位	singular							2
+母亲	NN	person	relative	movable			female	1	位	singular							2
+老师	NN	person	relative	movable			neutral	1	位	singular							2
+学生	NN	person	relative	movable			neutral	1	位	singular							2
+同事	NN	person	relative	movable			neutral	1	位	singular							2
+罪犯	NN	person		movable			neutral	1	个								2
+奴隶	NN	person		movable			neutral	1	个								2
+朋友	NN	person	relative	movable			neutral	1	个	singular							2
+员工	NN	person	relative	movable			neutral	1	位	singular							2
+警察	NN	person		movable			neutral	1	名								2
+消防员	NN	person		movable			neutral	1	名								3
+小孩	NN	person		movable			neutral	1	个								2
+飞行员	NN	person		movable			neutral	1	名								3
+空姐	NN	person		movable			neutral	1	位								2
+记者	NN	person		movable				1	名/位/个								2
+演奏员	NN	person		movable				1	名/位/个								3
+钢琴家	NN	person		movable				1	名/位/个								3
+音乐家	NN	person		movable			neutral	1	名/位/个								3
+吉他手	NN	person		movable			neutral	1	名/位/个								3
+领导	NN	person	relative	movable			neutral	1	位/个	singular							2
+上级	NN	person	relative	movable			neutral	1	位/个	singular							2
+下属	NN	person	relative	movable			neutral	1	位/个	singular							2
+工人	NN	person		movable			neutral	1	名/位/个								2
+打工人	NN	person		movable			neutral	1	名/位/个								3
+老板	NN	person	relative	movable			neutral	1	位/个	singular							2
+演员	NN	person		movable			neutral	1	名/位/个								2
+舞者	NN	person		movable			neutral	1	位/个								2
+服务员	NN	person		movable			neutral	1	位/个								3
+顾客	NN	person		movable			neutral	1	位/个								2
+消费者	NN	person		movable			neutral	1	位/个								3
+司机	NN	person		movable			neutral	1	名/位/个								2
+																	
+歌曲	NN	music		immovable				0	首		演奏						2
+协奏曲	NN	music		immovable				0	首		演奏						3
+奏鸣曲	NN	music		immovable				0	首		演奏						3
+华尔兹	NN	music		immovable				0	首		演奏						3
+狂想曲	NN	music		immovable				0	首		演奏						3
+歌	NN	music		immovable				0	首		唱						1
+美声	NN	music		immovable				0			唱						2
+京剧	NN	music		immovable				0			唱						2
+戏曲	NN	music		immovable				0			唱						2
+小调	NN	music		immovable				0			唱						2
+小提琴	NN	music		movable				0			拉						
+钢琴	NN	music		movable				0			弹						
+大提琴	NN	music		movable				0			拉						
+古筝	NN	music		movable				0			弹						
+笛子	NN	music		movable				0			吹						
+双簧	NN	music		movable				0			吹						
+																	
+电影	NN	video		immovable				0	部		观看/拍摄/制作		昂贵/便宜/有质感/精致/特殊/普通/大/小				2
+电视剧	NN	video		immovable				0	部		观看/拍摄/制作						3
+视频	NN	video		immovable				0	部		观看/拍摄/制作						2
+动画片	NN	video		immovable				0	部		观看/拍摄/制作						3
+记录片	NN	video		immovable				0	部		观看/拍摄/制作						3
+动作片	NN	video		immovable				0	部		观看/拍摄/制作						3
+																	
+书	NN	book		movable				0	本		看/写	受潮	昂贵/便宜/有质感/精致/特殊/普通/大/小				1
+小说	NN	book		movable				0	部/本		看/写/创作	受潮					2
+漫画	NN	book		movable				0	部/本		看/创作	受潮					2
+教材	NN	book		movable				0	部/本		看/写	受潮					2
+日记	NN	book		movable				0	部/本		看/写	受潮					2
+手账	NN	book		movable				0	部/本		看/写/制作	受潮					2
+																	
+俱乐部	NN	location		immovable				0								里	3
+照相馆	NN	location		immovable				0								里	3
+派出所	NN	location		immovable				0								里	3
+消防站	NN	location		immovable				0								里	3
+电影院	NN	location		immovable				0								里	3
+沙漠	NN	location		immovable				0			跨越/去					里	2
+长江	NR	location		immovable				0			跨越/去					上	2
+黄河	NR	location		immovable				0			跨越/去					上	2
+小桥	NN	location		immovable				0			走					上	2
+海洋	NN	location		immovable				0			跨越/去					里	2
+山洞	NN	location		immovable				0			登/爬					里	2
+池塘	NN	location		immovable				0								里	2
+火山	NN	location		immovable				0								上	2
+火车站	NN	location		immovable				0								里	3
+																	
+玻璃珠	NN	obj		movable				0	个		弹	碎掉/熔化	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+录像带	NN	obj		movable				0	盘		看	故障	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+收音机	NN	obj		movable				0	个		听	故障	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+电冰箱	NN	obj		movable				0	台		买/卖	故障	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+电视机	NN	obj		movable				0	台		买/卖	故障	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+充电器	NN	obj		movable				0	个		买/卖	故障	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+热水器	NN	obj		movable				0	台		买/卖	故障	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+饮料瓶	NN	obj		movable				0	个		买/卖	碎掉	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+开瓶器	NN	obj		movable				0	个		买/卖	故障	昂贵/便宜/有质感/精致/特殊/普通/大/小				3
+方便面	NN	food		movable				0	桶/袋/包		吃/买	过期/变质					3
+苹果	NN	food		movable				0	个		吃/买	腐烂					2
+橘子	NN	food		movable				0	个		吃/买	腐烂					2
+香蕉	NN	food		movable				0	个/串		吃/买	腐烂					2
+面包	NN	food		movable				0	片		吃/买	过期/变质					2
+蛋糕	NN	food		movable				0	个/块		吃/买	过期/变质					2
+巧克力	NN	food		movable				0	块		吃/买	过期/变质					3
+糖	NN	food		movable				0	块		吃/买	过期/变质/熔化					1
+糖果	NN	food		movable				0	块/颗		吃/买	过期/变质/熔化					2
+坚果	NN	food		movable				0	颗		吃/买	变质					2
+葡萄	NN	food		movable				0	粒		吃/买	腐烂					2
+馒头	NN	food		movable				0	个		吃/买	变质					2
+花卷	NN	food		movable				0	个		吃/买	变质					2
+蛋炒饭	NN	food		movable				0	碗		吃/买	变质					3
+白米饭	NN	food		movable				0	碗		吃/买	变质					3
+鱼丸	NN	food		movable				0	个		吃/买	变质					2
+																	
+啤酒	NN	beverage		movable				0	瓶/桶		喝/买	过期/变质					2
+白酒	NN	beverage		movable				0	瓶/杯		喝/买	过期/变质					2
+冰红茶	NN	beverage		movable				0	瓶		喝/买	过期/变质					3
+可乐	NN	beverage		movable				0	瓶		喝/买	过期/变质					2
+矿泉水	NN	beverage		movable				0	瓶/桶		喝/买						3
+橙汁	NN	beverage		movable				0	瓶/杯		喝/买	过期/变质					2
+葡萄汁	NN	beverage		movable				0	杯		喝/买	过期/变质					3
+红酒	NN	beverage		movable				0	杯/瓶		喝/买	过期/变质					2
+咖啡	NN	beverage		movable				0	杯		喝/买	过期/变质					2
+红茶	NN	beverage		movable				0	杯		喝/买	过期/变质					2
+牛奶	NN	beverage		movable				0	杯		喝/买	过期/变质					2
+																	
+被子	NN	obj		movable				0	条		盖	受潮	昂贵/便宜/有质感/精致/特殊/普通/大/小				2
+杯子	NN	obj		movable				0	个		打碎	碎掉	昂贵/便宜/有质感/精致/特殊/普通/大/小				2
+教材	NN	obj		movable				0	本		读/写/预习	受潮	昂贵/便宜/有质感/精致/特殊/普通/大/小				2
+作业	NN	obj		movable				0	份		写	受潮	昂贵/便宜/有质感/精致/特殊/普通/大/小				2
+																	
+上课	NN	activity		immovable													2
+开会	NN	activity		immovable													2
+派对	NN	activity		immovable					场		办						2
+旅行	NN	activity		immovable													
+会议	NN	activity		immovable													
+运动会	NN	activity		immovable													
+开营仪式	NN	activity		immovable													
+结婚典礼	NN	activity		immovable													
+观点	NN	idea		immovable					种/个		提出						2
+见解	NN	idea		immovable					个		提出						2
+想法	NN	idea	person	immovable					个		提出						2
+理念	NN	idea		immovable					种/个		提出						2
+态度	NN	idea	person	immovable					种/个		提出						2
+行为	NN	action	person	immovable					种/个		做出						2
+消息	NN			immovable					个		告诉						
+																	
+卡车	NN	vehicle		movable							开/驾驶	故障					
+火车	NN	vehicle		movable							开/驾驶	故障					
+货车	NN	vehicle		movable							开/驾驶	故障					
+飞机	NN	vehicle		movable							开/驾驶	故障					
+轮船	NN	vehicle		movable							开/驾驶	故障					
+货箱	NN	container		movable													
+																	
+一辈子	NN	duration		immovable													
+一上午	NN	duration		immovable													
+一早上	NN	duration		immovable													
+一中午	NN	duration		immovable													
+一下午	NN	duration		immovable													
+一整天	NN	duration		immovable													
+一整年	NN	duration		immovable													
+																	
+事	NN	general		immovable								败露					
+事情	NN	general		immovable								败露					
+东西	NN	general		movable													
+秘密	NN	message		immovable								败露					
+丑闻	NN	message		immovable								败露					
+消息	NN	message		immovable								败露					
+新闻	NN	message		immovable													
+信息	NN	message		immovable													
+																	
+																	
+演奏	VV	song	action			tran		1			演奏	演奏					2
+尊重	VV	person	stative	judge	pos	tran		1			尊重	尊重		1			2
+批评	VV	person/organization	action	judge/once	neg	tran		1			批评	批评		1			2
+爱戴	VV	person/organization	stative		pos	tran		1			爱戴	爱戴		0			2
+追捧	VV	person	stative	once	pos	tran		1			追捧	追捧		0			2
+拥护	VV	person/organization	stative		pos	tran		1			拥护	拥护		0			2
+推崇	VV	person/organization	stative		pos	tran		1			推崇	推崇		0			2
+喜欢	VV	person/organization	stative	judge	pos	tran		1			喜欢	喜欢		1			2
+憎恨	VV	person/organization	stative	judge	neg	tran		1			憎恨	憎恨		1			2
+厌恶	VV	person/organization	stative	judge	neg	tran		1			厌恶	厌恶		1			2
+排挤	VV	person	stative		neg	tran		1			排挤	排挤		0			2
+嫌弃	VV	person	stative	judge	neg	tran		1			嫌弃	嫌弃		1			2
+反感	VV	person/organization	stative	judge	neg	tran		1			反感	反感		1			2
+埋怨	VV	person/organization	stative	once	neg	tran		1			埋怨	埋怨		1			2
+支持	VV	person/organization	stative	judge	pos	tran		1			支持	支持		1			2
+宠爱	VV	person	stative		pos	tran		1			宠爱	宠爱		0			2
+青睐	VV	person	stative		pos	tran		1			青睐	青睐		0			2
+赞赏	VV	person	stative		pos	tran		1			赞赏	赞赏		1			2
+欺负	VV	person	action	once	neg	tran		1			欺负	欺负		0			2
+诽谤	VV	person	action		neg	tran		1			诽谤	诽谤		1			2
+夸奖	VV	person	action	once	pos	tran		1			夸奖	夸奖		1			2
+爱护	VV		action		pos	tran		1			爱护	爱护		0			2
+鼓励	VV	person	action	once	pos	tran		1			鼓励	鼓励		1			2
+照顾	VV	person	action		pos	tran		1			照顾	照顾		1			2
+批评	VV	person	action	judge/once	neg	tran		1			批评	批评		1			2
+伤害	VV	person	action		neg	tran		1			伤害	伤害		1			2
+责备	VV	person	action		neg	tran		1			责备	责备		1			2
+奖励	VV	person	action	once	pos	tran		1			奖励	奖励		1			2
+安慰	VV	person	action	once	pos	tran		1			安慰	安慰		1			2
+提醒	VV	person	action	once	neg	tran		1			提醒	提醒		1			2
+欺骗	VV	person	action		neg	tran		1			欺骗	欺骗		1			2
+原谅	VV	person	action		pos	tran		1			原谅	原谅		1			2
+约束	VV	person	action		neg	tran		1			约束	约束		1			2
+教育	VV	person	action	once	neg	tran		1			教育	教育		1			2
+控制	VV	person	action	once	neg	tran		1			控制	控制		1			2
+打劫	VV	person	action		neg	tran		1			打劫	打劫		0			2
+呵斥	VV	person	action	once	neg	tran		1			呵斥	呵斥		0			2
+表扬	VV	person	action	judge/once	pos	tran		1			表扬	表扬		1			2
+称赞	VV	person	action	judge/once	pos	tran		1			称赞	称赞		1			2
+嘉奖	VV	person/organization	action	once	pos	tran		1			嘉奖	嘉奖		1			2
+写	VV	obj	action			ditran		1			写	写					1
+预习	VV	obj	action			tran		1			预习	预习					2
+拉	VV	song	action			tran		1			拉	拉					1
+弹	VV	song	action			tran		1			弹	弹					1
+吹	VV	song	action			tran		1			吹	吹					1
+唱	VV	song	action			tran		1			唱	唱					1
+观看	VV	video/book	action			tran		1			观看	观看					2
+拍摄	VV	video	action			tran		1			拍摄	拍摄					2
+制作	VV		action			tran		1			制作	制作					2
+创作	VV		action			tran		1			创作	创作					2
+买	VV	trade	action			ditran		1			买	买					1
+卖	VV	trade	action			ditran		1			卖	卖					1
+开	VV		action			tran		1			开	开					1
+驾驶	VV		action			tran		1			驾驶	驾驶					2
+																	
+																	
+																	
+讲	VV	cp						1				讲					1
+说	VV	cp						1				说					1
+认为	VV	cp						1				认为					2
+觉得	VV	cp						1				觉得					2
+想	VV	control			pos			1				想					1
+想要	VV	control			pos			1				想要					2
+希望	VV	control			pos			1				希望					2
+期待	VV	control			pos			1				期待					2
+愿意	VV	control			pos			1				愿意					2
+不想	VV	control			neg			1				想					1
+不想要	VV	control			neg			1				想要					3
+不希望	VV	control			neg			1				希望					3
+不期待	VV	control			neg			1				期待					3
+不愿意	VV	control			neg			1				愿意					3
+相信	VV	person/organization				tran		1			相信	相信		1			2
+建立	VV	organization				tran		1			建立	建立					2
+取代	VV	person				tran		1			取代	取代					
+																	
+取缔	VV	organization				tran		1			取缔	取缔					2
+重建	VV	organization				tran		1			重建	重建					2
+前往	VV	location				tran		1			前往	前往					2
+离开	VV	location				alter		1			离开	离开					2
+回到	VV	location				tran		1			回到	回到					2
+找到	VV	location				tran		1			找到	找到					2
+跨越	VV					tran		1			跨越	跨越					
+完成	VV					tran		1			完成	完成					
+学	VV					tran		1			学	学					
+救	VV					tran		1			救	救					
+登上	VV					tran		1			登上	登上					
+偷听	VV					tran/intran		1			偷听	偷听					
+爬行	VV					intran		1			爬行	爬行					
+打断	VV	body				tran		1			打断	打断					2
+划伤	VV	body				alter		0			划伤	划伤					2
+包扎	VV	body				tran		1			包扎	包扎					2
+治疗	VV	body				tran		1			治疗	治疗					2
+检查	VV	body				tran		1			检查	检查					2
+																	
+看	VV	obj	see			tran		1			看	看					1
+吃	VV	obj	eat			tran		1			吃	吃					1
+喝	VV	obj	eat			tran		1			喝	喝					1
+盖	VV	obj				tran		1			盖	盖					1
+搬	VV	obj				ditran		0			搬	搬					1
+																	
+																	
+出发	VV	person	leave			intran		1				出发					2
+起飞	VV	person				intran		1				启航					2
+启程	VV	person	leave			intran		1				启程					2
+睡觉	VV	person				intran		1				睡觉					2
+玩耍	VV	person				intran		1				玩耍					2
+跑步	VV	person				intran		1				跑					2
+运动	VV	person				intran		1				跳					2
+唱歌	VV	person				intran		1				唱歌					2
+跳舞	VV	person				intran		1				跳舞					2
+听课	VV	person				intran		1				听课					2
+打架	VV	person				intran		1				打架					2
+看戏	VV	person				intran		1				看戏					2
+品茶	VV	person				intran		1				品茶					2
+呼吸	VV	person				intran		1				呼吸					2
+颤抖	VV	person				intran		1				颤抖					2
+微笑	VV	person				intran		1				微笑					2
+叹息	VV	person				intran		1				叹息					2
+闲逛	VV	person				intran		1				闲逛					2
+健身	VV	person				intran		1				健身					2
+走路	VV	person				intran		1				走路					2
+游泳	VV	person				intran		1				游泳					2
+笑	VV	person				intran		1				笑					1
+哭	VV	person				intran		1				哭					1
+入睡	VV	person				intran		1				入睡					2
+站立	VV	person				intran		1				站立					2
+坐下	VV	person				intran		1				坐下					2
+躺下	VV	person				intran		1				躺下					2
+停下	VV	person				intran		1				停下					2
+溜走	VV	person				intran		1				溜走					2
+走	VV	person				intran		1				走					1
+去	VV	person				intran		1				去					1
+来	VV	person				intran		1				来					1
+过来	VV	person				intran		1				过来					2
+过去	VV	person				intran		1				过去					2
+																	
+碎掉	VV	obj				intran		0				碎掉					2
+熔化	VV	obj				intran		0				熔化					2
+过期	VV	obj				intran		0				过期					2
+腐烂	VV	obj				intran		0				腐烂					2
+变质	VV	obj				intran		0				变质					2
+故障	VV	obj				intran		0				故障					2
+受潮	VV	obj				intran		0				受潮					2
+败露	VV	obj				intran		0				败露					2
+																	
+打碎	VV	obj				alter		0			打碎	打碎					2
+清洗	VV	obj				tran		1			清洗	清洗					2
+买	VV	obj			pos	ditran		1			买	买					1
+卖	VV	obj			pos	ditran		1			卖	卖					1
+抨击	VV	idea	action		neg	tran		1			抨击	抨击					2
+批判	VV	idea	action		neg	tran		1			批判	批判					2
+反驳	VV	idea	action		neg	tran		1			反驳	反驳					2
+赞成	VV	idea	action		pos	tran		1			赞成	赞成					2
+支持	VV	idea	action		pos	tran		1			支持	支持					2
+辩护	VV	idea	action		pos	tran		1			辩护	辩护					2
+维护	VV	idea	action		pos	tran		1			维护	维护					2
+领养	VV	animal	action			tran		1			领养	领养					2
+捕捉	VV	animal	action			tran		1			捕捉	捕捉					2
+麻醉	VV	animal	action			tran		1			麻醉	麻醉					2
+捕捉	VV	animal	action			tran		1			捕捉	捕捉					2
+屠宰	VV	animal	action			tran		1			屠宰	屠宰					2
+麻醉	VV	animal	action			tran		1			麻醉	麻醉					2
+捕捉	VV	animal	action			tran		1			捕捉	捕捉					2
+吃	VV	animal	action			tran		1			吃	吃					1
+煮	VV	animal	stative			tran		1			煮	煮					1
+炖	VV	animal	stative			tran		1			炖	炖					1
+烧	VV	animal	action			tran		1			烧	烧					1
+清蒸	VV	animal	action			tran		1			清蒸	清蒸					2
+爆炒	VV	animal	action			tran		1			爆炒	爆炒					2
+送	VV	object	action		pos	ditran		1			送	送					1
+给	VV	object	action			ditran		1			给	给					1
+递	VV	object	action		pos	ditran		1			递	递					1
+借	VV	object	action		pos	ditran		1			借	借					1
+寄	VV	object	action		pos	ditran		1			寄	寄					1
+藏	VV	object	action_put		pos	tran		1			藏	藏					1
+放	VV	object	action_put		pos	tran		1			放	放					1
+扔	VV	object	action_put		neg	tran		1			扔	扔					1
+丢	VV	object			neg	tran		1			丢	丢					1
+摆	VV	object	action_put			tran		1			摆	摆					1
+知晓	VV	message				tran		1			知晓	知晓					2
+了解	VV	message				tran		1			了解	了解					2
+知道	VV	message				tran		1			知道	知道					2
+																	
+看见	VV	perceive	see									看见					
+听见	VV	perceive	hear									听见					
+闻到	VV	perceive	smell									闻到					
+看到	VV	perceive	see									看到					
+听到	VV	perceive	hear									听到					
+																	
+不应该	VV	modal			neg							不应该					3
+不可以	VV	modal			neg							不可以					3
+应该	VV	modal			pos							应该					2
+可以	VV	modal			pos							可以					2
+																	
+																	
+失望	VA	emotion			neg			1									2
+难过	VA	emotion			neg			1									2
+开心	VA	emotion			pos			1									2
+伤心	VA	emotion			neg			1									
+苦恼	VA	emotion			neg			1									
+高兴	VA	emotion			pos			1									
+悲伤	VA	emotion			neg			1									
+快乐	VA	emotion			pos			1									
+愤怒	VA	emotion			neg			1									
+沉默	VA	emotion			neg			1									
+冷静	VA	emotion			neg			1									
+困惑	VA	emotion			neg			1									
+便宜	VA	obj/food/beverage	price		pos												2
+昂贵	VA	obj/food/beverage	price		neg												2
+有质感	VA	obj															3
+狂野	VA	song															2
+优雅	VA	song															2
+精致	VA	song															2
+粗旷	VA	song															2
+忧郁	VA	song															2
+狂放	VA	song															2
+悠扬	VA	song															2
+激昂	VA	song															2
+舒缓	VA	song															2
+动听	VA	song															2
+深情	VA	song															2
+欢快	VA	song															2
+悲伤	VA	song															2
+高昂	VA	song															2
+低沉	VA	song															2
+优雅	VA	song															2
+热烈	VA	song															2
+宁静	VA	song															2
+成熟	VA																2
+顺利	VA	activity			pos												2
+坎坷	VA	activity			pos												2
+深刻	VA	idea	depth		pos												2
+浅显	VA	idea	depth		neg												2
+激进	VA	idea	stance		pos												2
+保守	VA	idea	stance		neg												2
+年轻	VA	person	age		pos			1									2
+年老	VA	person	age		neg			1									2
+方便	VA																2
+明确	VA																2
+灵活	VA																2
+特殊	VA	person/activity	status		pos												2
+普通	VA	person/activity	status		neg												2
+有趣	VA	activity			pos												2
+无聊	VA	activity			neg												2
+大	VA	body			pos												1
+小	VA	body			neg												1
+凶猛	VA	animal			pos			1									2
+温驯	VA	animal			neg			1									2
+咸	VA	food/beverage	taste		pos												1
+淡	VA	food/beverage	taste		neg												1
+冷	VA	food/beverage	temp		pos												1
+热	VA	food/beverage	temp		neg												1
+甜	VA	food/beverage	taste														1
+酸	VA	food/beverage	taste														1
+辣	VA	food	taste														1
+苦	VA	food/beverage	taste														1
+	VA	food/beverage	taste														0
+鲜美	VA	food	taste														2
+甜	VA	food	taste														1
+醇厚	VA	food	taste														2
+鲜嫩	VA	food	taste														2
+浓	VA	food	taste														1
+酥脆	VA	food	taste														2
+滑嫩	VA	food	taste														2
+酸甜	VA	food	taste														2
+咸鲜	VA	food	taste														2
+甘甜	VA	food	taste														2
+清淡	VA	food	taste														2
+浓郁	VA	food	taste														2
+酸爽	VA	food	taste														2
+辛辣	VA	food	taste														2
+酥软	VA	food	taste														2
+胖	VA	person	weight		pos												1
+瘦	VA	person	weight		neg												1
+高	VA	person	height		pos												1
+矮	VA	person	height		neg												1
+美	VA	person	appear		pos												1
+丑	VA	person	appear		neg												1
+																	
+出现	VE		action		neg												2
+存在	VE		stative		neg												2
+变化	VE		action		pos												2
+消失	VE		action		pos												2
+融化	VE		action		neg												2
+凝固	VE		action		pos												2
+气化	VE		action		neg												2
+蒸发	VE		action		neg												2
+																	
+																	
+在	P	location/time															1
+自	P	time															1
+从	P	time															1
+上	LC	location														上	1
+时	LC	time															1
+之前	LC	time															2
+以来	LC	time															2
+外	LC	location														外	1
+里	LC	location														里	1
+内	LC	time/location														内	1
+之后	LC	time															2
+目前	NT	now															2
+今年	NT	now															2
+去年	NT	past															2
+今天	NT	now															2
+现在	NT	now															2
+过去	NT	past															2
+未来	NT	future															2
+近年	NT	past															2
+当时	NT	past															2
+最近	NT	past															2
+明年	NT	future															2
+明天	NT	future															
+刚刚	NT	past															
+不久前	NT	past															
+前不久	NT	past															
+一周前	NT	past															
+两个月前	NT	past															
+三年前	NT	past															
+五分钟前	NT	past															
+几秒钟前	NT	past															
+																	
+																	
+																	
+大声												说/唱					2
+小声												小声					2
+悄悄												悄悄					2
+																	
+跟	IN	with															
+和	IN	with															
+																	
+次	Q																
+回	Q																
+趟	Q																
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	

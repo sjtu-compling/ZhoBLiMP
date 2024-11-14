@@ -1,0 +1,23 @@
+{
+  "user": "siyuan",
+  "uid": "noun_phrase_conjunction_jian",
+  "phenomenon": "nominal_expression",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:VV subcat:person subcat3:judge",
+    "phrase:Person -1:<number:singular> | phrase:SingularComplexPerson",
+    "和|跟",
+    "phrase:Person -1:<number:singular> | phrase:SingularComplexPerson",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:VV subcat:person subcat3:judge",
+    "phrase:Person -1:<number:singular> | phrase:SingularComplexPerson",
+    "兼",
+    "phrase:Person -1:<number:singular> | phrase:SingularComplexPerson",
+    "。"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "user": "yikang",
+  "uid": "agent_causative",
+  "phenomenon": "argument_structure",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:ComplexPerson | phrase:Person",
+    " | pos:AD subcat:chadian",
+    "transitivity:tran matchedPosition:4 matchedProperties:tran_verb",
+    "了",
+    "pos:NN",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:ComplexPerson | phrase:Person",
+    " | pos:AD subcat:chadian",
+    "pos:VE",
+    "了",
+    "pos:NN",
+    "。"
+  ]
+}

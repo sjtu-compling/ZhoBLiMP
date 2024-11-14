@@ -1,0 +1,25 @@
+{
+  "good_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "把",
+    "pos:DT subcat:article subcat2:plural",
+    "pos:NN subcat:obj",
+    "",
+    "pos:VV subcat:object subcat2:action",
+    "完了。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "把",
+    "pos:DT subcat:article subcat2:plural",
+    "pos:NN subcat:obj",
+    "所",
+    "pos:VV subcat:object subcat2:action",
+    "完了。"
+  ],
+  "sep": "",
+  "strict_MP": false,
+  "phenomenon": "BA",
+  "uid": "BA_suo_adverbial_b",
+  "user": "hongao"
+}

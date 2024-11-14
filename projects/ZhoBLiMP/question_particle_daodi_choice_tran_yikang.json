@@ -1,0 +1,33 @@
+{
+  "user": "yikang",
+  "uid": "question_particle_daodi_choice_tran",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "到底",
+    "是想",
+    "pos:VV transitivity:tran",
+    "pos:NN matchedPosition:3 matchedProperties:tran_verb",
+    "还是",
+    "想",
+    "pos:VV transitivity:tran",
+    "pos:NN matchedPosition:7 matchedProperties:tran_verb",
+    "呢",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "到底",
+    "是想",
+    "pos:VV transitivity:tran",
+    "pos:NN matchedPosition:3 matchedProperties:tran_verb",
+    "还是",
+    "想",
+    "pos:VV transitivity:tran",
+    "pos:NN matchedPosition:7 matchedProperties:tran_verb",
+    "吗",
+    "？"
+  ]
+}

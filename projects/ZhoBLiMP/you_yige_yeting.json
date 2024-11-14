@@ -1,0 +1,33 @@
+{
+  "user": "yeting",
+  "uid": "you_yige",
+  "phenomenon": "quantifiers",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "那 这",
+    "pos:M mPos:2 mPro:classifier",
+    "pos:NN",
+    "是",
+    "",
+    "pos:CD",
+    "pos:M mPos:7 mPro:classifier",
+    "pos:NN subcat:person",
+    "pos:VV mPos:2 mPro:tran_verb",
+    "的",
+    "。"
+  ],
+  "bad_rule": [
+    "那 这",
+    "pos:M mPos:2 mPro:classifier",
+    "pos:NN",
+    "是",
+    "有",
+    "pos:CD",
+    "pos:M mPos:7 mPro:classifier",
+    "pos:NN subcat:person",
+    "pos:VV mPos:2 mPro:tran_verb",
+    "的",
+    "。"
+  ]
+}

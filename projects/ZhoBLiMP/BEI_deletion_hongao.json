@@ -1,0 +1,25 @@
+{
+  "user": "hongao",
+  "uid": "BEI_deletion",
+  "phenomenon": "passive",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NN subcat:vehicle | pos:NN subcat:container",
+    "上被",
+    "pos:NR subcat:person",
+    "pos:VV subcat2:action_put",
+    "满了",
+    "pos:NN subcat:obj",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "pos:VV subcat2:action_put",
+    "满了",
+    "pos:NN subcat:vehicle | pos:NN subcat:container",
+    "上",
+    "pos:NN subcat:obj",
+    "。"
+  ]
+}

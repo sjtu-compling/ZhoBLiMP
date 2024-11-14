@@ -1,0 +1,25 @@
+{
+  "user": "hongao",
+  "uid": "agent_deletion",
+  "phenomenon": "argument_structure",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person",
+    "，",
+    "pos:DT subcat:article",
+    "pos:NN subcat:message | pos:NN subcat:general",
+    "pos:IN subcat:with",
+    "pos:PN",
+    "没有关系。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "，",
+    "pos:DT subcat:article",
+    "pos:NN subcat:message | pos:NN subcat:general",
+    "pos:IN subcat:with",
+    "",
+    "没有关系。"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "good_rule": [
+    "pos:DT subcat:article",
+    "pos:NN subcat:message | pos:NN subcat:general",
+    "pos:VV subcat:modal attitude:neg",
+    "被",
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "所",
+    "pos:VV subcat:message",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:DT subcat:article",
+    "pos:NN subcat:message | pos:NN subcat:general",
+    "pos:VV subcat:modal attitude:neg",
+    "被",
+    "",
+    "所",
+    "pos:VV subcat:message",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": false,
+  "phenomenon": "passive",
+  "uid": "passive_suo",
+  "user": "hongao"
+}

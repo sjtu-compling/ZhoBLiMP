@@ -1,0 +1,19 @@
+{
+  "good_rule": [
+    "phrase:Person",
+    "可以跟任何人一起",
+    "pos:VV transitivity:intran",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "可以跟没有人一起",
+    "pos:VV transitivity:intran",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "fci_licensing",
+  "uid": "fci_renhe_prepP",
+  "user": "huhai"
+}

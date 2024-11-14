@@ -1,0 +1,25 @@
+{
+  "user": "Kejia",
+  "uid": "existential_there_subject_raising",
+  "phenomenon": "quantifiers",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "有",
+    "pos:CD subcat:num",
+    "pos:M matchedPosition:3 matchedProperties:classifier",
+    "pos:NN subcat:person",
+    "没有",
+    "pos:VV transitivity:intran animate:1",
+    "。"
+  ],
+  "bad_rule": [
+    "",
+    "pos:CD subcat:num",
+    "pos:M matchedPosition:3 matchedProperties:classifier",
+    "pos:NN subcat:person",
+    "没有",
+    "pos:VV transitivity:intran animate:1",
+    "。"
+  ]
+}

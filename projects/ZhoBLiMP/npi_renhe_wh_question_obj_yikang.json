@@ -1,0 +1,23 @@
+{
+  "user": "yikang",
+  "uid": "npi_renhe_wh_question_obj",
+  "phenomenon": "npi_licensing",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "谁",
+    "subcat:control",
+    "transitivity:tran",
+    "phrase:Possessive",
+    "pos:NN matchedPosition:2 matchedProperties:tran_verb",
+    "？"
+  ],
+  "bad_rule": [
+    "谁",
+    "subcat:control",
+    "transitivity:tran",
+    "任何",
+    "pos:NN matchedPosition:2 matchedProperties:tran_verb",
+    "？"
+  ]
+}

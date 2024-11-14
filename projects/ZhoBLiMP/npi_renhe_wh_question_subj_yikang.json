@@ -1,0 +1,25 @@
+{
+  "user": "yikang",
+  "uid": "npi_renhe_wh_question_subj",
+  "phenomenon": "npi_licensing",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:CD | pos:DT subcat:woCD",
+    "pos:M matchedPosition:2 matchedProperties:classifier",
+    "pos:NN subcat:person",
+    "会",
+    "transitivity:tran animate:1",
+    "哪些东西 | 什么东西 | 什么",
+    "？"
+  ],
+  "bad_rule": [
+    "任何",
+    "",
+    "pos:NN subcat:person",
+    "会",
+    "transitivity:tran animate:1",
+    "哪些东西 | 什么东西 | 什么",
+    "？"
+  ]
+}

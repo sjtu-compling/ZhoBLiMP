@@ -1,0 +1,21 @@
+{
+  "user": "yikang",
+  "uid": "passive_intransitive",
+  "phenomenon": "passive",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person",
+    "pos:LB matchedPosition:3 matchedProperties:attitude",
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:tran subcat2:stative | pos:VV transitivity:tran subcat2:action",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "pos:LB matchedPosition:3 matchedProperties:attitude",
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:intran animate:1",
+    "。"
+  ]
+}

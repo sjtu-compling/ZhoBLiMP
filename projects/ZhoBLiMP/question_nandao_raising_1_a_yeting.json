@@ -1,0 +1,27 @@
+{
+  "user": "yeting",
+  "uid": "question_nandao_raising_1_a",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "难道",
+    "是",
+    "phrase:Person",
+    "先 首先 率先",
+    "pos:VV subcat2:action",
+    "的",
+    "吗",
+    "？"
+  ],
+  "bad_rule": [
+    "是",
+    "难道",
+    "phrase:Person",
+    "先 首先 率先",
+    "pos:VV subcat2:action",
+    "的",
+    "吗",
+    "？"
+  ]
+}

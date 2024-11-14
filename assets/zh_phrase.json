@@ -1,0 +1,262 @@
+{
+    "Person": [
+        [
+            {"type": "Lexical", "rule": {"pos": "NR", "subcat": "person"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "PN", "subcat": "person"}}
+        ]
+    ],
+    "SingularPerson": [
+        [
+            {"type": "Lexical", "rule": {"pos": "NR", "subcat": "person", "number": "singular"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "PN", "subcat": "person", "number": "singular"}}
+        ]
+    ],
+    "ReflV": [
+        [
+            {"type": "Lexical", "rule": {"pos": "AD", "subcat":"degree"}},
+            {"type": "Lexical", "rule": {"pos": "VV", "refl": "1", "subcat2":"stative"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "refl": "1", "subcat2":"stative"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "refl": "1", "subcat2":"action"}},
+            {"type": "Direct", "rule": ["了"]}
+        ]
+    ],
+    "Det": [
+        [
+            {"type": "Lexical", "rule": {"pos": "DT", "subcat": "wCD"}},
+            {"type": "Lexical", "rule": {"pos": "CD", "subcat": "num"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "DT", "subcat": "woCD"}}
+        ]
+    ],
+    "InDet": [
+        [
+            {"type": "Lexical", "rule": {"pos": "CD"}},
+            {"type": "Lexical", "rule": {"pos": "M"}}
+        ]
+    ],
+    "Possessive": [
+        [
+            {"type": "Lexical", "rule": {"pos": "PN", "subcat": "person"}},
+            {"type": "Direct", "rule": ["的"]}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "NR", "subcat": "person"}},
+            {"type": "Direct", "rule": ["的"]}
+        ]
+    ],
+    "transVP": [
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran"}},
+            {"type": "Direct", "rule": ["了"]},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "0", "matchedProperties": ["tran_verb"]}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran"}},
+            {"type": "Direct", "rule": ["过"]},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "0", "matchedProperties": ["tran_verb"]}},
+            {"type": "Direct", "rule": ["了"]}
+        ],
+        [
+            {"type": "Direct", "rule": ["把"]},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "2", "matchedProperties": ["tran_verb"]}},
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran"}},
+            {"type": "Direct", "rule": ["了"]}
+        ]
+    ],
+    "ComplexNP": [
+        [
+            {"type": "Phrase", "rule": {"name": "Possessive"}},
+            {"type": "Lexical", "rule": {"pos": "NN"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "DT", "subcat": "wCD"}},
+            {"type": "Lexical", "rule": {"pos": "CD", "subcat": "num"}},
+            {"type": "Lexical", "rule": {"pos": "M"}},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "2", "matchedProperties": ["classifier"]}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "DT", "subcat": "woCD"}},
+            {"type": "Lexical", "rule": {"pos": "M"}},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "1", "matchedProperties": ["classifier"]}}
+        ]
+    ],
+    "ComplexPerson": [
+        [
+            {"type": "Phrase", "rule": {"name": "Possessive"}},
+            {"type": "Lexical", "rule": {"subcat": "person", "subcat2": "relative"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "DT", "subcat": "wCD"}},
+            {"type": "Lexical", "rule": {"pos": "CD", "subcat": "num"}},
+            {"type": "Lexical", "rule": {"pos": "M"}},
+            {"type": "Matched", "rule": {"subcat": "person", "matchedPosition": "2", "matchedProperties": ["classifier"]}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "DT", "subcat": "woCD"}},
+            {"type": "Lexical", "rule": {"pos": "M"}},
+            {"type": "Matched", "rule": {"subcat": "person", "matchedPosition": "1", "matchedProperties": ["classifier"]}}
+        ]
+    ],
+    "SingularComplexPerson": [
+        [
+            {"type": "Phrase", "rule": {"name": "Possessive"}},
+            {"type": "Lexical", "rule": {"subcat": "person", "subcat2": "relative"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "DT", "subcat": "woCD", "subcat2":"singular"}},
+            {"type": "Lexical", "rule": {"pos": "M"}},
+            {"type": "Matched", "rule": {"subcat": "person", "matchedPosition": "1", "matchedProperties": ["classifier"]}}
+        ]
+    ],
+    "CD+M+NN": [
+        [
+            {"type": "Lexical", "rule": {"pos": "CD", "subcat": "num"}},
+            {"type": "Matched", "rule": {"pos": "M", "matchedPosition": "2", "matchedProperties": ["classifier"]}},
+            {"type": "Lexical", "rule": {"pos": "NN"}}
+        ]
+    ],
+    "M+NN": [
+        [
+            {"type": "Matched", "rule": {"pos": "M", "matchedPosition": "1", "matchedProperties": ["classifier"]}},
+            {"type": "Lexical", "rule": {"pos": "NN"}}
+        ]
+    ],
+    "M+NN+FOOD": [
+        [
+            {"type": "Matched", "rule": {"pos": "M", "matchedPosition": "1", "matchedProperties": ["classifier"]}},
+            {"type": "Lexical", "rule": {"pos": "NN", "subcat": "food"}}
+        ]
+    ],
+    "SimpVP": [
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "intran", "subcat":"person"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran"}},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "0", "matchedProperties": ["tran_verb"]}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran", "subcat": "person"}},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "0", "matchedProperties": ["subcat"]}}
+        ]
+    ],
+    "SimpleVP": [
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "intran", "subcat":"person"}},
+            {"type": "Direct", "rule": ["了"]}
+        ],
+        [
+            {"type": "Phrase", "rule": {"name": "transVP"}}
+        ]
+    ],
+    "CompVP": [
+        [
+            {"type": "Direct", "rule": ["已经"]},
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "intran"}},
+            {"type": "Direct", "rule": ["了"]}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran"}},
+            {"type": "Direct", "rule": ["过"]},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "0", "matchedProperties": ["tran_verb"]}},
+            {"type": "Direct", "rule": ["了"]}
+        ],
+        [
+            {"type": "Direct", "rule": ["正在"]},
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "intran"}}
+        ],
+        [
+            {"type": "Direct", "rule": ["正在"]},
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran"}},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "1", "matchedProperties": ["tran_verb"]}}
+        ]
+    ],
+    "InfVP": [
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "intran"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran"}},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "0", "matchedProperties": ["tran_verb"]}}
+        ]
+    ],
+    "GuoVP": [
+        [
+            {"type": "Lexical", "rule": {"pos": "VV", "transitivity": "tran"}},
+            {"type": "Direct", "rule": ["过"]},
+            {"type": "Matched", "rule": {"pos": "NN", "matchedPosition": "0", "matchedProperties": ["tran_verb"]}}
+        ]
+    ],
+    "LB": [
+        [
+            {"type": "Lexical", "rule": {"pos": "LB"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "AD", "subcat": "degree"}},
+            {"type": "Lexical", "rule": {"pos": "LB", "expression": "受"}}
+        ],
+        [
+            {"type": "Lexical", "rule": {"pos": "AD", "subcat": "degree"}},
+            {"type": "Lexical", "rule": {"pos": "LB", "expression": "让"}}
+        ]
+    ],
+    "PP": [
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Lexical", "rule": {"pos": "NN", "subcat": "location"}}
+        ],
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Lexical", "rule": {"pos": "NR", "subcat": "city"}}
+        ],
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Lexical", "rule": {"pos": "NR", "subcat": "province"}}
+        ],
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Lexical", "rule": {"pos": "NT"}}
+        ]
+    ],
+    "PPLOC": [
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Lexical", "rule": {"pos": "NN", "subcat": "location"}}
+        ],
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Lexical", "rule": {"pos": "NR", "subcat": "city"}}
+        ],
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Lexical", "rule": {"pos": "NR", "subcat": "province"}}
+        ]
+    ],
+    "PPTIME": [
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Lexical", "rule": {"pos": "NT"}}
+        ]
+    ],
+    "PPRH": [
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Direct", "rule": ["任何"]},
+            {"type": "Lexical", "rule": {"pos": "NN", "subcat": "location"}}
+        ],
+        [
+            {"type": "Direct", "rule": ["在"]},
+            {"type": "Direct", "rule": ["任何"]},
+            {"type": "Direct", "rule": ["时间","地点","场合","情况下"]}
+        ]
+    ]
+}

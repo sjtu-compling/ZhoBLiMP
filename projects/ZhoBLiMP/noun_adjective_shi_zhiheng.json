@@ -1,0 +1,19 @@
+{
+  "user": "zhiheng",
+  "uid": "noun_adjective_shi",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:PN animate:1",
+    "是",
+    "pos:NN subcat:person",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN animate:1",
+    "",
+    "pos:NN subcat:person",
+    "。"
+  ]
+}

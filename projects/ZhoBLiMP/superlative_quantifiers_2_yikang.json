@@ -1,0 +1,29 @@
+{
+  "user": "yikang",
+  "uid": "superlative_quantifiers_2",
+  "phenomenon": "quantifiers",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "有的",
+    "pos:NN subcat:person | 人",
+    "pos:VV transitivity:tran matchedPosition:7 matchedProperties:tran_verb",
+    "了",
+    "最多",
+    "pos:CD subcat:num",
+    "pos:M",
+    "pos:NN matchedPosition:6 matchedProperties:classifier",
+    "。"
+  ],
+  "bad_rule": [
+    "没有",
+    "pos:NN subcat:person | 人",
+    "pos:VV transitivity:tran matchedPosition:7 matchedProperties:tran_verb",
+    "了",
+    "最多",
+    "pos:CD subcat:num",
+    "pos:M",
+    "pos:NN matchedPosition:6 matchedProperties:classifier",
+    "。"
+  ]
+}

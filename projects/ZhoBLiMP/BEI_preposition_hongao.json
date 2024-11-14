@@ -1,0 +1,21 @@
+{
+  "good_rule": [
+    "pos:PN subcat:person",
+    "被",
+    "pos:NR subcat:person",
+    "pos:VV subcat:person subcat2:action",
+    "了。"
+  ],
+  "bad_rule": [
+    "被",
+    "pos:NR subcat:person",
+    "pos:PN subcat:person",
+    "pos:VV subcat:person subcat2:action",
+    "了。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "passive",
+  "uid": "BEI_preposition",
+  "user": "hongao"
+}

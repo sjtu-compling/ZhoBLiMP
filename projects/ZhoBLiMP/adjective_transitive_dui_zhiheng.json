@@ -1,0 +1,27 @@
+{
+  "user": "zhiheng",
+  "uid": "adjective_transitive_dui",
+  "phenomenon": "verb_phrase",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:PN subcat2:person3 animate:1",
+    "对",
+    "pos:NR subcat:person",
+    "的",
+    "行为 所作所为 表现",
+    "有点 比较 很 非常",
+    "pos:VA subcat:emotion",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat2:person3 animate:1",
+    "有点 比较 很 非常",
+    "pos:VA subcat:emotion",
+    "",
+    "pos:NR subcat:person",
+    "的",
+    "行为 所作所为 表现",
+    "。"
+  ]
+}

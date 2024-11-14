@@ -1,0 +1,25 @@
+{
+  "user": "hongao",
+  "uid": "BA_duplicate_argument",
+  "phenomenon": "BA",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person",
+    "把",
+    "pos:NR subcat:person",
+    "pos:VV subcat:person subcat3:once",
+    "了",
+    "",
+    "一下。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "把",
+    "pos:NR subcat:person",
+    "pos:VV subcat:person subcat3:once",
+    "了",
+    "pos:PN mPos:0 mPro:gender/number",
+    "一下。"
+  ]
+}

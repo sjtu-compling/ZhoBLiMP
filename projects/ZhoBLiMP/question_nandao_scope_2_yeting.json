@@ -1,0 +1,27 @@
+{
+  "user": "yeting",
+  "uid": "question_nandao_scope_2",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "难道",
+    "认为 | 确定 | 相信",
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:tran matchedPosition:5 matchedProperties:tran_verb",
+    "pos:NN",
+    "吗",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "认为 | 确定 | 相信",
+    "难道",
+    "phrase:ComplexPerson",
+    "pos:VV transitivity:tran matchedPosition:5 matchedProperties:tran_verb",
+    "pos:NN",
+    "吗",
+    "？"
+  ]
+}

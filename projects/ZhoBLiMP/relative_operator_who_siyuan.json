@@ -1,0 +1,31 @@
+{
+  "user": "siyuan",
+  "uid": "relative_operator_who",
+  "phenomenon": "relativization_topicalization",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person -1:<number:singular>  | phrase:SingularComplexPerson",
+    "pos:VV subcat:message",
+    "phrase:Person -1:<number:singular>  | phrase:SingularComplexPerson",
+    "为什么 | ",
+    "pos:VV subcat:control",
+    "pos:PN subcat:person number:singular",
+    "pos:VV transitivity:intran subcat:person",
+    "的",
+    "原因",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person -1:<number:singular>  | phrase:SingularComplexPerson",
+    "pos:VV subcat:message",
+    "phrase:Person -1:<number:singular>  | phrase:SingularComplexPerson",
+    "为什么 | ",
+    "pos:VV subcat:control",
+    "谁",
+    "pos:VV transitivity:intran subcat:person",
+    "的",
+    "原因",
+    "？"
+  ]
+}

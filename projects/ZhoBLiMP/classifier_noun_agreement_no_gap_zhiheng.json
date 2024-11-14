@@ -1,0 +1,29 @@
+{
+  "user": "zhiheng",
+  "uid": "classifier_noun_agreement_no_gap",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "买 卖",
+    "了",
+    "pos:CD",
+    "pos:M mPos:7 mPro:classifier",
+    "pos:NN subcat:person",
+    "喜欢吃的",
+    "pos:NN subcat:animal",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "买 卖",
+    "了",
+    "pos:CD",
+    "pos:M mPos:5 mPro:classifier",
+    "pos:NN subcat:person",
+    "喜欢吃的",
+    "pos:NN subcat:animal",
+    "。"
+  ]
+}

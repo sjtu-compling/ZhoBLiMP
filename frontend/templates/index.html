@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Generator</title>
+    <style>
+        body, html {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Tahoma, sans-serif;
+        }
+        .grammar-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .button {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 95%;
+        }
+        .grammar-box {
+            margin-right: 10px;
+        }
+        .sentences-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .sentences-table th, .sentences-table td {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+        ul, ol {
+            padding-left: 0;
+            list-style-position: inside;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        .error-message {
+            color: red;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="width: 75%;">
+            <h1>Sentence Generator</h1>
+            <label for="spaceSep-checkbox">Space Separated</label></label>
+            <input type="checkbox" id="spaceSep-checkbox" /> <br>
+            <label for="strict_MP-checkbox">Strict Minimal Pair (same length)</label>
+            <input type="checkbox" id="strict_MP-checkbox" checked="checked" /> <br>
+            <form id="sentence-form">
+                <label for="load-name">Load Rules:</label>
+                <select id="project-select">
+                    <option value="">Select a project</option>
+                </select>
+                <select id="load-name" name="load-name">
+                    <option value="">Select a file</option>
+                </select>
+                <button type="button" onclick="loadRules()">Load</button>
+                <div id="grammar-rows-container">
+                </div>
+                <br>
+                <label for="vocab">Vocabulary (TSV/CSV format):</label><br>
+                <textarea id="vocab" name="vocab" rows="4" cols="50"></textarea><br><br>
+                <button type="button" onclick="generateSentences()">Generate Sentences</button>
+                <br>
+                <br>
+                <div id="vocabSaveSection">
+                    <!-- <button id="saveVocabButton">Save Vocabulary as TSV</button> -->
+                    <button id="saveVocabButton" type="button">Save Vocabulary as TSV</button>
+                </div>
+            </form>
+        </div>
+        <div style="width: 25%; margin-left: auto;">
+            <h1>Generated Sentences</h2>
+            <table class="sentences-table" id="sentences-table">
+                <thead>
+                    <tr>
+                        <th>Good Sentences</th>
+                        <th>Bad Sentences</th>
+                    </tr>
+                </thead>
+                <tbody id="sentences-body">
+                    <!-- Sentences will be added here -->
+                </tbody>
+            </table>
+            <div id="error-message" class="error-message"></div>
+            <label for="phenomenon">Phenomenon:</label>
+            <input type="text" id="phenomenon" name="phenomenon" /> <br>
+            <label for="uid">UID:</label>
+            <input type="text" id="uid" name="uid" /> <br>
+            <label for="user">User:</label>
+            <input type="text" id="user" name="user" /> <br>
+            <label for="override-checkbox">Modify Existing Paradigms</label>
+            <input type="checkbox" id="override-checkbox" /> <br>
+            <button type="button" onclick="saveResults()">Save</button>
+        </div>
+    </div>
+    </br>
+    </br>
+    <div style="width: 50%; margin-right: auto;">
+        <h1>Documentations</h1>
+        <p><strong>Introduction</strong></p>
+        <ul>
+            <li><strong>Good Grammar Rules</strong>: A list of good grammar rules that the generated sentences should
+                follow.</li>
+            <li><strong>Bad Grammar Rules</strong>: Bad grammar rules bear one different position.</li>
+            <li><strong>Vocabulary</strong>: A list of words that the generated sentences can use. The vocabulary should be
+                copied from Feishu.</li>
+        </ul>
+        <p><strong>RULE of Grammar Rule</strong></p>
+        <ul>
+            <li><strong>受 被</strong></br>用空格分割候选词汇：该位置可为“受”或者“被”。</li>
+            <li><strong>pos:NR person:1</strong></br>用空格分割属性，从词表中根据属性筛选：该位置表示pos属性为NR且person属性为1的词汇。</li>
+            <li><strong>pos:NR person:1 | pos:NN animate:1</strong></br>用竖杠分割同一个位置可供选择的多种规则：该位置可为人名、也可以是有生命的名词。</li>
+        </ul>
+        <p>不同位置词汇之间的属性匹配/不匹配</p>
+        <ul>
+            <li><strong>(mis)matchPosition:N</strong></br>指定第N个词汇与当前词汇需要进行属性的匹配或者不匹配。</li>
+            <li><strong>(mis)matchProperties:PROPERTY</strong></br>指定匹配或不匹配所依赖的词汇属性。</li>
+        </ul>
+        </p><strong>Example</strong></p>
+        该例子中，需要生成的句子如下：
+        <ul>
+            <li>张三受<u>李四</u>尊重。</li>
+            <li>*张三受<u>杯子</u>尊重。</li>
+        </ul>
+        划线部分可区别合乎语法规则与不合乎语法规则的句子。因此，可以写如下规则来生成目标句子对：
+        <ol>
+            <li>pos:NR person:1 (good and bad)</li>
+            <li>受 被 (good and bad)</li>
+            <li>pos:NR person:1 (good); pos:NN animate:0 (bad)</li>
+            <li>尊重 敬仰 推崇 (good and bad)</li>
+            <li>。 (good and bad)</li>
+        </ol>
+        以下为量词匹配的例子，需要生成的句子如下：
+        <ul>
+            <li>一<u>个</u>杯子</li>
+            <li>*一<u>条</u>杯子</li>
+        </ul>
+        可以用以下规则生成目标句子对：
+        <ol>
+            <li>pos:CD (good and bad)</li>
+            <li>pos:M matchPosition:2 matchProperties:classifier (good); pos:M mismatchPosition:2
+                mismatchProperties:classifier (bad)</li>
+            <li>pos:NN(good and bad)</li>
+        </ol>
+        以下为性别匹配的例子，需要生成的句子如下：
+        <ul>
+            <li>李先生...<u>他</u></li>
+            <li>*李先生...<u>她</u></li>
+        </ul>
+        可以用以下规则生成目标句子对：
+        <ol>
+            <li>pos:NR person:1 (good and bad)</li>
+            <li>pos:PN matchPosition:0 matchProperties:gender; pos:PN mismatchPosition:0 mismatchProperties:gender</li>
+        </ol>
+    </div>
+    
+    <script>
+        
+        
+        document.getElementById('saveVocabButton').addEventListener('click', saveVocabularyAsTSV);
+
+        function saveVocabularyAsTSV() {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            const vocab = document.getElementById('vocab').value;
+
+            if (!vocab) {
+                alert('Please enter vocabulary before saving.');
+                return;
+            }
+
+            // Send the vocabulary data to the server
+            fetch('/save-vocabulary', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    vocab: vocab
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Vocabulary saved successfully!');
+                } else {
+                    alert('Error saving vocabulary: ' + data.error);
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('An error occurred while saving the vocabulary.');
+            });
+        }
+
+
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/list-projects')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    if (data.success) {
+                        const projectSelect = document.getElementById('project-select');
+                        data.projects.forEach(function (project) {
+                            const option = document.createElement('option');
+                            option.value = project;
+                            option.textContent = project;
+                            projectSelect.appendChild(option);
+                        });
+                        updateSavedFiles(projectSelect.value);
+                        projectSelect.addEventListener('change', function () {
+                            updateSavedFiles(projectSelect.value);
+                        });
+                    } else {
+                        console.error('Error fetching saved files: ' + data.error);
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error fetching saved files: ' + error);
+                });
+            ensureAtLeastOneRow();
+            updateIndices();
+        });
+
+        function updateSavedFiles(project) {
+            fetch('/list-saved-files?project=' + encodeURIComponent(project))
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    if (data.success) {
+                        const loadNameSelect = document.getElementById('load-name');
+                        loadNameSelect.innerHTML = '';  // Clear existing options
+                        data.files.forEach(function (file) {
+                            const option = document.createElement('option');
+                            option.value = file;
+                            option.textContent = file;
+                            loadNameSelect.appendChild(option);
+                        });
+                    } else {
+                        console.error('Error fetching saved files: ' + data.error);
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error fetching saved files: ' + error);
+                });
+            }
+
+        function createGrammarRow(goodGrammarValue = '', badGrammarValue = '') {
+            const row = document.createElement('div');
+            row.className = 'grammar-row';
+
+            const indexSpan = document.createElement('span');
+            indexSpan.className = 'index-span';
+            row.appendChild(indexSpan);
+
+            const goodGrammarInput = document.createElement('input');
+            goodGrammarInput.type = 'text';
+            goodGrammarInput.style.width = '300px';
+            goodGrammarInput.name = 'good-grammar';
+            goodGrammarInput.value = goodGrammarValue;
+            goodGrammarInput.placeholder = 'Good Grammar';
+            row.appendChild(goodGrammarInput);
+
+            const badGrammarInput = document.createElement('input');
+            badGrammarInput.type = 'text';
+            badGrammarInput.style.width = '300px';
+            badGrammarInput.name = 'bad-grammar';
+            badGrammarInput.value = badGrammarValue;
+            badGrammarInput.placeholder = 'Bad Grammar';
+            row.appendChild(badGrammarInput);
+
+            const addButton = document.createElement('button');
+            addButton.className = 'button';
+            addButton.type = 'button';
+            addButton.textContent = 'Add Below';
+            addButton.onclick = function () {
+                const newRow = createGrammarRow();
+                row.after(newRow);
+                updateIndices();
+            };
+            row.appendChild(addButton);
+
+            const deleteButton = document.createElement('button');
+            deleteButton.className = 'button';
+            deleteButton.type = 'button';
+            deleteButton.textContent = 'Delete';
+            deleteButton.onclick = function () {
+                row.remove();
+                ensureAtLeastOneRow();
+                updateIndices();
+            };
+            row.appendChild(deleteButton);
+
+            return row;
+        }
+        
+        function ensureAtLeastOneRow() {
+            const container = document.getElementById('grammar-rows-container');
+            if (container.childElementCount === 0) {
+                container.appendChild(createGrammarRow());
+            }
+        }
+
+        function updateIndices() {
+            const rows = document.querySelectorAll('.grammar-row');
+            rows.forEach((row, index) => {
+                const indexSpan = row.querySelector('.index-span');
+                indexSpan.textContent = index + ': ';
+            });
+        }
+
+        async function generateSentences() {
+            const goodGrammarElements = document.getElementsByName('good-grammar');
+            const badGrammarElements = document.getElementsByName('bad-grammar');
+            const goodGrammar = Array.from(goodGrammarElements).map(input => input.value);
+            const badGrammar = Array.from(badGrammarElements).map(input => input.value);
+            const vocab = document.getElementById('vocab').value;
+            const strict_MP = document.getElementById('strict_MP-checkbox').checked;
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.textContent = ''; // Clear previous error message
+
+            const spaceSep = document.getElementById('spaceSep-checkbox').checked;
+            if (spaceSep) {
+                sep = ' ';
+            } else {
+                sep = '';
+            }
+
+            const response = await fetch('/generate_sentences', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    good_grammar: goodGrammar,
+                    bad_grammar: badGrammar,
+                    vocab: vocab,
+                    strict_MP: strict_MP,
+                    sep: sep,
+                }),
+            });
+
+            const data = await response.json();
+            if (data.success) {
+                const goodSentences = data.good_sentence;
+                const badSentences = data.bad_sentence;
+                const sentencesTableBody = document.getElementById('sentences-body');
+                sentencesTableBody.innerHTML = ''; // Clear previous sentences
+
+                for (let i = 0; i < goodSentences.length; i++) {
+                    const row = document.createElement('tr');
+
+                    const goodSentenceCell = document.createElement('td');
+                    goodSentenceCell.textContent = goodSentences[i];
+                    row.appendChild(goodSentenceCell);
+
+                    const badSentenceCell = document.createElement('td');
+                    badSentenceCell.textContent = badSentences[i];
+                    row.appendChild(badSentenceCell);
+
+                    sentencesTableBody.appendChild(row);
+                }
+            } else {
+                errorMessage.textContent = `Error: ${data.error}\n${data.traceback}`;
+            }
+        }
+
+        async function saveResults() {
+            saveVocabularyAsTSV();
+            const goodGrammarElements = document.getElementsByName('good-grammar');
+            const badGrammarElements = document.getElementsByName('bad-grammar');
+            const goodGrammar = Array.from(goodGrammarElements).map(input => input.value);
+            const badGrammar = Array.from(badGrammarElements).map(input => input.value);
+            const vocab = document.getElementById('vocab').value;
+            const phenomenon = document.getElementById('phenomenon').value;
+            const uid = document.getElementById('uid').value;
+            const user = document.getElementById('user').value;
+            const override = document.getElementById('override-checkbox').checked;
+            const project = document.getElementById('project-select').value;
+            const strict_MP = document.getElementById('strict_MP-checkbox').checked;
+            const spaceSep = document.getElementById('spaceSep-checkbox').checked;
+            if (spaceSep) {
+                sep = ' ';
+            } else {
+                sep = '';
+            }
+
+            const response = await fetch('/save-rules', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    project: project,
+                    user: user,
+                    uid: uid,
+                    phenomenon: phenomenon,
+                    good_grammar: goodGrammar,
+                    bad_grammar: badGrammar,
+                    vocab: vocab,
+                    override: override,
+                    strict_MP: strict_MP,
+                    sep: sep,
+                }),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                alert('Results saved successfully!');
+            } else {
+                alert(result.message);
+            }
+        }
+
+        function loadRules() {
+            const folder = document.getElementById('project-select').value;
+            const filename = document.getElementById('load-name').value;
+            if (!filename) {
+                alert('Please select a file to load the rules.');
+                return;
+            }
+
+            fetch(`/load-rules?project=${encodeURIComponent(folder)}&filename=${encodeURIComponent(filename)}`)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    if (data.success) {
+                        console.log(data);
+                        const goodGrammarList = data.good_rule;
+                        const badGrammarList = data.bad_rule;
+
+                        const container = document.getElementById('grammar-rows-container');
+                        container.innerHTML = '';
+                        
+                        goodGrammarList.forEach((goodGrammar, index) => {
+                            const badGrammar = badGrammarList[index] || '';
+                            const row = createGrammarRow(goodGrammar, badGrammar);
+                            container.appendChild(row);
+                        });
+                        // Ensure at least one row is present after loading
+                        ensureAtLeastOneRow();
+                        updateIndices();
+
+                        const phenomenonInput = document.getElementById('phenomenon');
+                        const uidInput = document.getElementById('uid');
+                        const userInput = document.getElementById('user');
+                        const strict_MPCheckbox = document.getElementById('strict_MP-checkbox');
+
+                        phenomenonInput.value = data.phenomenon;
+                        uidInput.value = data.uid;
+                        userInput.value = data.user;
+                        strict_MPCheckbox.checked = data.strict_MP;
+
+                        alert('Rules loaded successfully.');
+                    } else {
+                        alert('Error loading rules: ' + data.error);
+                    }
+                })
+            .catch(error => {
+                alert('Error loading rules: ' + error);
+            });
+        }
+    </script>
+</body>
+</html>

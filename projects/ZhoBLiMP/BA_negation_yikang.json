@@ -1,0 +1,23 @@
+{
+  "good_rule": [
+    "phrase:Person",
+    "没有",
+    "把",
+    "pos:NN matchedPosition:4 matchedProperties:tran_verb",
+    "pos:VV transitivity:tran",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "把",
+    "pos:NN matchedPosition:4 matchedProperties:tran_verb",
+    "没有",
+    "pos:VV transitivity:tran",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "BA",
+  "uid": "BA_negation",
+  "user": "yikang"
+}

@@ -1,0 +1,25 @@
+{
+  "good_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "pos:AD subcat:transfer",
+    "拿",
+    "pos:NN subcat:obj",
+    "给",
+    "pos:PN subcat:person mismatchedPosition:0 mismatchedProperties:expression | pos:NR subcat:person",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "拿",
+    "pos:NN subcat:obj",
+    "pos:AD subcat:transfer",
+    "给",
+    "pos:PN subcat:person mismatchedPosition:0 mismatchedProperties:expression | pos:NR subcat:person",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "verb_phrase",
+  "uid": "left_adverbial_e",
+  "user": "hongao"
+}

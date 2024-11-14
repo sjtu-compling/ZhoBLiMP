@@ -1,0 +1,25 @@
+{
+  "user": "yikang",
+  "uid": "BA_no_progressive",
+  "phenomenon": "BA",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "正在",
+    "pos:VV transitivity:tran mPos:5 mPro:tran_verb",
+    "这 那",
+    "pos:M mPos:5 mPro:classifier",
+    "pos:NN",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "正把",
+    "这 那",
+    "pos:M mPos:5 mPro:classifier",
+    "pos:NN",
+    "pos:VV transitivity:tran mPos:5 mPro:tran_verb",
+    "。"
+  ]
+}

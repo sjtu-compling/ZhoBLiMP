@@ -1,0 +1,25 @@
+{
+  "user": "siyuan",
+  "uid": "relativization_movement_when_where",
+  "phenomenon": "relativization_topicalization",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person|phrase:ComplexPerson",
+    "",
+    "pos:VV subcat:person transitivity:tran",
+    "phrase:Person|phrase:ComplexPerson",
+    "的",
+    "那天 那年",
+    "，已经过去很久了。"
+  ],
+  "bad_rule": [
+    "phrase:Person|phrase:ComplexPerson",
+    "所",
+    "pos:VV subcat:person transitivity:tran",
+    "phrase:Person|phrase:ComplexPerson",
+    "的",
+    "那天 那年",
+    "，已经过去很久了。"
+  ]
+}

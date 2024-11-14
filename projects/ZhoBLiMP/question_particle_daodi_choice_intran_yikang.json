@@ -1,0 +1,29 @@
+{
+  "user": "yikang",
+  "uid": "question_particle_daodi_choice_intran",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "到底",
+    "想",
+    "pos:VV transitivity:intran animate:1",
+    "还是",
+    "想",
+    "pos:VV transitivity:intran animate:1 mmPos:3 mmPro:expression",
+    "呢",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "到底",
+    "想",
+    "pos:VV transitivity:intran animate:1",
+    "还是",
+    "想",
+    "pos:VV transitivity:intran animate:1 mmPos:3 mmPro:expression",
+    "吗",
+    "？"
+  ]
+}

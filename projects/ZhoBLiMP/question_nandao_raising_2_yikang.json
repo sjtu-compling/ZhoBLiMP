@@ -1,0 +1,23 @@
+{
+  "user": "yikang",
+  "uid": "question_nandao_raising_2",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "难道",
+    "有",
+    "pos:NN subcat:person | 人",
+    " | 不",
+    "phrase:SimpVP 0:<animate:1>",
+    "吗？"
+  ],
+  "bad_rule": [
+    "有",
+    "pos:NN subcat:person | 人",
+    "难道",
+    " | 不",
+    "phrase:SimpVP 0:<animate:1>",
+    "吗？"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "user": "yeting",
+  "uid": "question_particle_nandao",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:NT subcat:now | pos:NT subcat:past",
+    "难道",
+    "已经",
+    "pos:VV transitivity:tran mPos:6 mPro:tran_verb",
+    "过",
+    "pos:NN",
+    "了吗",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:NT subcat:now | pos:NT subcat:past",
+    "到底",
+    "已经",
+    "pos:VV transitivity:tran mPos:6 mPro:tran_verb",
+    "过",
+    "pos:NN",
+    "了吗",
+    "？"
+  ]
+}

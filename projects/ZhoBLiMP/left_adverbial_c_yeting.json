@@ -1,0 +1,25 @@
+{
+  "user": "yeting",
+  "uid": "left_adverbial_c",
+  "phenomenon": "verb_phrase",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:AD subcat:state_de matchedPosition:3 matchedProperties:verb",
+    "地",
+    "pos:VV transitivity:tran animate:1",
+    "了",
+    "pos:NN matchedPosition:3 matchedProperties:tran_verb",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:VV transitivity:tran animate:1",
+    "了",
+    "pos:AD subcat:state_de matchedPosition:3 matchedProperties:verb",
+    "的",
+    "pos:NN matchedPosition:3 matchedProperties:tran_verb",
+    "。"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "user": "zhiheng",
+  "uid": "plural_cardinal_men_a",
+  "phenomenon": "nominal_expression",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "今天 昨天",
+    "pos:NN subcat:activity",
+    "来了",
+    "一",
+    "pos:M mPos:6 mPro:classifier",
+    "",
+    "pos:NN subcat:person",
+    "。"
+  ],
+  "bad_rule": [
+    "今天 昨天",
+    "pos:NN subcat:activity",
+    "来了",
+    "一",
+    "pos:M mPos:6 mPro:classifier",
+    "pos:NN subcat:person",
+    "们",
+    "。"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "user": "yikang",
+  "uid": "passive_body_part",
+  "phenomenon": "passive",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "被",
+    "phrase:Person",
+    "pos:VV mPos:5 mPro:tran_verb",
+    "了",
+    "pos:NN subcat:body",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "被",
+    "phrase:Person",
+    "pos:VV mPos:5 mPro:tran_verb",
+    "了",
+    "pos:NN subcat:obj",
+    "。"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "user": "yikang",
+  "uid": "agent_animacy_subj",
+  "phenomenon": "argument_structure",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    " | phrase:Possessive",
+    "pos:NN subcat:person",
+    "phrase:transVP",
+    "。"
+  ],
+  "bad_rule": [
+    " | phrase:Possessive",
+    "pos:NN animate:0",
+    "phrase:transVP",
+    "。"
+  ]
+}

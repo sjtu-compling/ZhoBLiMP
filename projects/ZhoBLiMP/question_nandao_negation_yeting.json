@@ -1,0 +1,25 @@
+{
+  "user": "yeting",
+  "uid": "question_nandao_negation",
+  "phenomenon": "question",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "难道",
+    "不",
+    "愿意 | 想 | 希望 ",
+    "phrase:SimpVP",
+    "吗",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "不",
+    "难道",
+    "愿意 | 想 | 希望",
+    "phrase:SimpVP",
+    "吗",
+    "？"
+  ]
+}

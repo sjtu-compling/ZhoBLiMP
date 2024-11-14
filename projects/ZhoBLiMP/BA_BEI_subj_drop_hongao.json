@@ -1,0 +1,25 @@
+{
+  "user": "hongao",
+  "uid": "BA_BEI_subj_drop",
+  "phenomenon": "BA",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "pos:PN animate:1",
+    "把",
+    "pos:NN",
+    "pos:VV mPos:2 mPro:tran_verb",
+    "了，就",
+    "来 去 走",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NN",
+    "被",
+    "pos:PN animate:1",
+    "pos:VV mPos:2 mPro:tran_verb",
+    "了，就",
+    "来 去 走",
+    "。"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "user": "yeting",
+  "uid": "left_adverbial_negation",
+  "phenomenon": "verb_phrase",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "没有",
+    "pos:AD mPos:3 mPro:verb",
+    "pos:VV mPos:4 mPro:tran_verb",
+    "pos:NN",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person | phrase:ComplexPerson",
+    "pos:AD mPos:3 mPro:verb",
+    "没有",
+    "pos:VV mPos:4 mPro:tran_verb",
+    "pos:NN",
+    "。"
+  ]
+}

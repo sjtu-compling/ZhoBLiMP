@@ -1,0 +1,29 @@
+{
+  "user": "yikang",
+  "uid": "control_modal_vs_raising_modal",
+  "phenomenon": "control_raising",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    " | phrase:Possessive",
+    "phrase:Det",
+    "pos:M",
+    "pos:NN animate:0 matchedPosition:2 matchedProperties:classifier",
+    "pos:VV subcat:modal attitude:pos",
+    " | 更",
+    "pos:VA matchedPosition:3 matchedProperties:subcat",
+    "一点 一些",
+    "。"
+  ],
+  "bad_rule": [
+    " | phrase:Possessive",
+    "phrase:Det",
+    "pos:M",
+    "pos:NN animate:0 matchedPosition:2 matchedProperties:classifier",
+    "pos:VV subcat:control attitude:pos",
+    " | 更",
+    "pos:VA matchedPosition:3 matchedProperties:subcat",
+    "一点 一些",
+    "。"
+  ]
+}

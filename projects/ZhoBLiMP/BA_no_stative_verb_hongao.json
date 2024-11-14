@@ -1,0 +1,23 @@
+{
+  "good_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "会把",
+    "pos:PN subcat:person | pos:NR subcat:person matchedPosition:0 matchedProperties:expression",
+    "恨",
+    "pos:NN subcat:duration",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:PN subcat:person | pos:NR subcat:person",
+    "会把",
+    "pos:PN subcat:person | pos:NR subcat:person matchedPosition:0 matchedProperties:expression",
+    "怕",
+    "pos:NN subcat:duration",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": true,
+  "phenomenon": "BA",
+  "uid": "BA_no_stative_verb",
+  "user": "hongao"
+}

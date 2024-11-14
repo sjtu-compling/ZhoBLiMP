@@ -1,0 +1,27 @@
+{
+  "user": "zhiheng",
+  "uid": "principle_A_c_command_number",
+  "phenomenon": "anaphora",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "pos:NR subcat:person",
+    "的",
+    "pos:NN subcat2:relative mPos:0 mPro:gender",
+    "们",
+    "phrase:ReflV",
+    "pos:PN number:singular mPos:0 mPro:gender",
+    "们自己",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "的",
+    "pos:NN subcat2:relative mPos:0 mPro:gender",
+    "们",
+    "phrase:ReflV",
+    "pos:PN number:singular mPos:0 mPro:gender",
+    "自己",
+    "。"
+  ]
+}

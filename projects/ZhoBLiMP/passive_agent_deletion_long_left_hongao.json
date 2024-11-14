@@ -1,0 +1,35 @@
+{
+  "good_rule": [
+    "pos:NR subcat:person",
+    "pos:NT subcat:past | pos:NT subcat:now",
+    "对",
+    "pos:PN subcat:person",
+    "的",
+    "pos:NN subcat:action | pos:NN subcat:idea",
+    "pos:AD subcat:possibility",
+    "被",
+    "pos:NR subcat:anyone",
+    "所",
+    "pos:VV subcat3:judge",
+    "。"
+  ],
+  "bad_rule": [
+    "pos:NR subcat:person",
+    "pos:NT subcat:past | pos:NT subcat:now",
+    "对",
+    "pos:PN subcat:person",
+    "的",
+    "pos:NN subcat:action | pos:NN subcat:idea",
+    "pos:AD subcat:possibility",
+    "被",
+    "",
+    "所",
+    "pos:VV subcat3:judge",
+    "。"
+  ],
+  "sep": "",
+  "strict_MP": false,
+  "phenomenon": "passive",
+  "uid": "passive_agent_deletion_long_left",
+  "user": "hongao"
+}

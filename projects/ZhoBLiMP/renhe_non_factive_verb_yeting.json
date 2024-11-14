@@ -1,0 +1,33 @@
+{
+  "user": "yeting",
+  "uid": "renhe_non_factive_verb",
+  "phenomenon": "npi_licensing",
+  "strict_MP": false,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "不",
+    "觉得 相信 希望",
+    "pos:VV mPos:4 mPro:tran_verb",
+    "pos:NN",
+    "对",
+    "pos:NN subcat:person",
+    "有",
+    "任何",
+    "影响",
+    "。"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "不",
+    "知道 主张",
+    "pos:VV mPos:4 mPro:tran_verb",
+    "pos:NN",
+    "对",
+    "pos:NN subcat:person",
+    "有",
+    "任何",
+    "影响",
+    "。"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "user": "yeting",
+  "uid": "question_A_not_A_daodi_a",
+  "phenomenon": "question",
+  "strict_MP": true,
+  "sep": "",
+  "good_rule": [
+    "phrase:Person",
+    "到底",
+    "pos:VV transitivity:intran subcat:person",
+    "不",
+    "matchedPosition:2 matchedProperties:expression",
+    "？"
+  ],
+  "bad_rule": [
+    "phrase:Person",
+    "到底",
+    "不",
+    "pos:VV transitivity:intran subcat:person",
+    "matchedPosition:2 matchedProperties:expression",
+    "？"
+  ]
+}
