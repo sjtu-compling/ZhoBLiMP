@@ -21,7 +21,9 @@ ZhoBLiMP is a dataset that can be used to probe Chinese linguistic knowledge in 
 We evaluate several off-the-shelf LLMs and Pythina-based models we train from scratch on ZhoBLiMP.
 Our results show that model performance saturates with limited model parameters (around 500M) and training data (around 1B tokens).
 
+<div align="center">
 <img src="img/benchmark-results.png" width="90%">
+</div>
 
 Along with the dataset, we release model checkpoints we train from scratch and code for the web interface for minimal pair generation.
 
@@ -48,7 +50,7 @@ python app.py
 
 You can check the following demo video for the web interface:
 
-<video src="img/data-gen-demo.mp4" width="100%" controls></video>
+https://github.com/sjtu-compling/ZhoBLiMP/blob/main/img/data-gen-demo.mp4
 
 ## Model download and evaluation
 
