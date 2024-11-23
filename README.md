@@ -50,7 +50,11 @@ python app.py
 
 You can check the following demo video for the web interface:
 
-https://github.com/sjtu-compling/ZhoBLiMP/blob/main/img/data-gen-demo.mp4
+
+
+https://github.com/user-attachments/assets/a8be2aa2-c3ed-468c-9a81-08e8d63cd6ba
+
+
 
 ## Model download and evaluation
 
