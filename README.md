@@ -4,7 +4,7 @@
 Yikang Liu, Yeting Shen, Hongao Zhu, Lilong Xu, Zhiheng Qian, Siyuan Song, Kejia Zhang <br>
 Jialong Tang, Pei Zhang, Baosong Yang, Rui Wang, Hai Hu
 
-_Shanghai Jiao Tong University & Tongyi Lab, Alibaba Group_
+_Shanghai Jiao Tong University & Tongyi Lab, Alibaba Cloud_
 
 <sup>If you have any questions, please contact [Yikang Liu](https://yikang0131.github.io/) and [Hai Hu](https://huhailinguist.github.io/).</sup>
 
@@ -45,6 +45,10 @@ You can also launch the web interface to add or modify the templates, or start y
 cd frontend
 python app.py
 ```
+
+You can check the following demo video for the web interface:
+
+<video src="img/data-gen-demo.mp4" width="100%" controls></video>
 
 ## Model download and evaluation
 
