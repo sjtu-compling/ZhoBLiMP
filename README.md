@@ -1,10 +1,10 @@
-# ZhoBLiMP: a Systematic Assessment of Language Models with Linguistic Minimal Pairs in Chinese
+# A Systematic Assessment of Language Models with Linguistic Minimal Pairs in Chinese
 
 <div align="center">
 Yikang Liu, Yeting Shen, Hongao Zhu, Lilong Xu, Zhiheng Qian, Siyuan Song, Kejia Zhang <br>
 Jialong Tang, Pei Zhang, Baosong Yang, Rui Wang, Hai Hu
 
-_Shanghai Jiao Tong University & Tongyi Lab, Alibaba Cloud_
+_Shanghai Jiao Tong University & Tongyi Lab_
 
 <sup>If you have any questions, please contact [Yikang Liu](https://yikang0131.github.io/) and [Hai Hu](https://huhailinguist.github.io/).</sup>
 
@@ -12,20 +12,58 @@ _Shanghai Jiao Tong University & Tongyi Lab, Alibaba Cloud_
 
 </div>
 
+## Overview
+
+Our work follows a long line of using minimal pairs to probe linguistic knowledge in language models. 
+- We introduce a new dataset, **ZhoBLiMP**, for Chinese miniml pairs.
+- We train Zh-Pythia LMs from scratch on Chinese data to investigate the learning of Chinese syntax.
+- We propose a new linking function (SLLN-LP) to evaluate LMs for mitigation of the bias caused by pairs of unequal lengths.
+- We build a GUI for semi-automatic minimal pair generation.
+
+## ZhoBLiMP dataset
+
 ZhoBLiMP is a dataset that can be used to probe Chinese linguistic knowledge in language models, especially syntax. It contains 35k minimal pairs that differ in a minimal way to demonstrate a single syntactic or semantic contrast. ZhoBLiMP has 118 paradigms in 15 high-level linguistic phenemena.
 
 <div align="center">
 <img src="img/benchmark-desc.png" width="80%">
 </div>
 
-We evaluate several off-the-shelf LLMs and Pythina-based models we train from scratch on ZhoBLiMP.
-Our results show that model performance saturates with limited model parameters (around 500M) and training data (around 1B tokens).
+We include the following files in this repo:
+- `data/human_validation_result.csv`: the results of human validation for each paradigm generated
+- `ZhoBLiMP.tar.gz`: the ZhoBLiMP dataset
+- `ZhoBLiMP-excluded.tar.gz`: the paradigms excluded for low human agreement
 
-<div align="center">
-<img src="img/benchmark-results.png" width="90%">
-</div>
+## Zh-Pythia LM suite
 
-Along with the dataset, we release model checkpoints we train from scratch and code for the web interface for minimal pair generation.
+You can download the model checkpoints of Zh-Pythia used in our paper from the Hugging Face model hub.
+
+```bash
+huggingface-cli download SJTU-CL/Zh-Pythia-1.4B --local-dir path/to/save --local-dir-use-symlinks False
+```
+
+And then you can evaluate the Zh-Pythia models or any other open-sourced ones on the ZhoBLiMP dataset by running the following command:
+
+```bash
+python src/run.py \
+    --data_dir data/ZhoBLiMP \
+    --model_name_or_path path/to/model \ 
+    --unigram_prob_file unigram/chinese-llama.json \
+    --batch_size 100 \
+    --max_length 64 \
+    --device cuda \
+    --output_dir results
+```
+
+
+## SLLN-LP linking function
+
+We propose to use sublinear function to normalize length:
+
+$\text{SLLN-LP}(x)=\frac{\log P(x)}{|x|^\alpha}, \alpha \in \left(0, 1\right).$
+
+We release our codes of SLLN-LP and other linking functions in `src/metrics`. The function `pow_norm_lp` is the implementation of SLLN-LP.
+
+For functions with frequency normalization, we release token unigram frequency in the training data of Zh-Pythia models `unigram`. Use the file according to the tokenizer of the target model, where you can find in our model card.
 
 ## Data generation interface
 
@@ -50,23 +88,6 @@ python app.py
 
 You can check the following demo video for the web interface:
 
-
-
 https://github.com/user-attachments/assets/a8be2aa2-c3ed-468c-9a81-08e8d63cd6ba
 
 
-
-## Model download and evaluation
-
-You can download the model checkpoints used in our paper from the Hugging Face model hub.
-
-```bash
-huggingface-cli download SJTU-CL/Zh-Pythia-1.4B --local-dir path/to/save --local-dir-use-symlinks False
-```
-
-And then you can evaluate the model or any other open-sourced ones in Hugging Face on the ZhoBLiMP dataset by running the following command:
-
-```bash
-tar zxvf ZhoBLiMP.tar.gz
-python eval.py -M path/to/model -D ZhoBLiMP -O path/to/output -B 64
-```
