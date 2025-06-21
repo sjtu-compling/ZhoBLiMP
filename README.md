@@ -16,9 +16,9 @@ _Shanghai Jiao Tong University & Tongyi Lab_
 
 Our work follows a long line of using minimal pairs to probe linguistic knowledge in language models. 
 - We introduce a new dataset, **ZhoBLiMP**, for Chinese miniml pairs.
-- We train Zh-Pythia LMs from scratch on Chinese data to investigate the learning of Chinese syntax.
-- We propose a new linking function (SLLN-LP) to evaluate LMs for mitigation of the bias caused by pairs of unequal lengths.
-- We build a GUI for semi-automatic minimal pair generation.
+- We train **Zh-Pythia LM suite** from scratch on Chinese data to investigate the learning of Chinese syntax.
+- We propose a new linking function, **SLLN-LP**, to evaluate LMs for mitigation of the bias caused by pairs of unequal lengths.
+- We build a **GUI** for semi-automatic minimal pair generation.
 
 ## ZhoBLiMP dataset
 
